@@ -6,4 +6,4 @@ cd ./_site
 
 git add ./
 git commit -m "$message"
-git push origin gh-pages
+git push origin master
