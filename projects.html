@@ -1,0 +1,28 @@
+---
+layout : layout
+title : Project list | Tomasz Subik software developer
+---
+
+        <section class="projects-small">
+	{% for project in site.categories.projects %}
+
+            <article>
+                <header class="project-small-title">
+                    <h1>
+                        {{project.title}}
+                    </h1>
+                    
+                </header>
+                <div class="project-small-image">
+                    <img src="{{project.imageUrl}}" alt="{{project.title}}" title="{{project.title}}">
+                </div>
+                <div class="project-small-content-wrap">
+                <div class="project-small-content">
+                    {{project.content}}
+                </div>
+                </div>
+            </article>
+
+   {% endfor %}
+
+           </section>

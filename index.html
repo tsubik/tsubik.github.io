@@ -1,0 +1,70 @@
+---
+layout : layout
+title : Tomasz Subik software developer
+---
+<div>
+
+<div id="two-column-wrap">
+                <section id="infoPhoto">
+            <img src="images/ts3.jpg" />
+        </section>
+        <section id="infoContent">
+            <section id="infoSection">
+            <table>
+                <tr>
+                    <td><span id="implement"> =></span></td>
+                    <td><span class="bracket"> {</span></td>
+                    <td>
+                        <div id="infoSectionMeDesc">
+                            <p>
+                                Web and hybrid mobile app developer who loves to create useful apps. I was using .net platform since 2006 but now diving more into javascript, angularjs, ruby on rails and bunch of other cool technologies. Open source projects contributor.
+                            </p>
+                            <p>
+                                On the other hand I am a sport addicted person. Ice freestyler and hockey player, in the summer inline urban skater. Snow and ski lover. I also enjoy jogging, playing squash and swimming.
+                            </p>
+                            <p class="mailme">
+                                <span class="leftCol">Mail me</span>tsubik@gmail.com <br />
+                                <span class="leftCol">Find me on</span><a href="http://www.github.com/tsubik"><img src="images/github-icon.png" /></a><a href="http://www.goldenline.pl/tomasz-subik"><img src="images/goldenline-icon.png" /></a>
+                            </p>
+                            <div id="hireMe">
+                                <a class="btn btn-large btn-success" href="mailto:tsubik@gmail.com">Want to hire me?</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><span class="bracket"> }</span></td>
+                </tr>
+            </table>
+            </section>
+        </section>
+    </div>
+
+    <div style="clear:both;"></div>
+    <h1 id="recent-blog-posts">
+        Recent blog posts
+    </h1>
+
+    <a href="/blog/" class="view-all-posts">view all posts...</a>
+        <hr class="separator"/>
+	{% for post in site.categories.blog limit:2 %}
+        <section class="blog-posts">
+            <article>
+                <header class="post-header">
+                    <a href="{{post.url}}">
+                    <h1 class="post-title">
+                        {{post.title}}
+                    </h1>
+                    </a>
+                    <p>
+                        <time datetime="{{ post.date }}">{{ post.date | date: "%d %B, %Y"  }}</time>
+                    </p>
+                </header>
+                <div class="post-content">
+                     {{ post.content | split:"<!--more-->" | first}}
+                </div>
+                <div class="post-readmore">
+                    <a href="{{post.url}}">Read more...</a>
+                </div>
+            </article>
+        </section>
+    {% endfor %}
+   </div> 

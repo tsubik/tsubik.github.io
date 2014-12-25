@@ -1,0 +1,492 @@
+﻿/*----------------------------------------------------------
+The base color for this template is #5c87b2. If you'd like
+to use a different color start by replacing all instances of
+#5c87b2 with your new color.
+----------------------------------------------------------*/
+body {
+    background-color: #ffffff;
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: "Open Sans", Verdana, Helvetica, Sans-Serif;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+}
+hr{
+    margin: 0px;
+    padding: 0px;
+}
+h2
+{
+    font-size: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+div.clear{
+    clear:both;
+}
+div#container 
+{
+    width: 980px;
+    position: relative;
+    margin: 0 auto;
+}
+
+a, a:visited
+{
+    text-decoration: none;
+    /*color: #34AC98;*/
+    color: #000;
+}
+a:hover, a:focus
+{
+    color: #000;
+    /*color: #EC6635;*/
+}
+a.nounderline
+{
+    text-decoration: none;
+}
+
+/* header with navigation */
+
+#container > header
+{
+    overflow:hidden;
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+section#sectionMyName a
+{
+    color: #000;
+}
+section#sectionMyName
+{
+    font-family: "Segoe UI Light", Verdana, Helvetica, Sans-Serif;
+    float: left;
+}
+section#sectionMyName h2
+{
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: lighter;
+}
+#myTitle
+{
+    float: right;
+    font-size:  18px;
+}
+nav
+{
+    float: right;
+    font-size: 26px;
+    margin-right: 10px;
+}
+nav ul
+{
+    list-style: none;
+    padding-left: 0px;
+}
+nav ul li
+{
+    float: left;
+    margin-left: 15px;
+    list-style: none;
+}
+nav ul li:hover
+{
+
+}
+nav ul li a{
+    padding: 10px 10px 10px 10px;
+}
+nav ul li a:hover
+{
+        color: #fff;
+    background-color: #4A91AC;
+}
+
+/* Copyright footer */
+footer
+{
+    font-size: 14px;
+    margin-top: 40px;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+}
+
+
+/* Home site */
+#two-column-wrap
+{
+    overflow: hidden;
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+#infoPhoto
+{
+    width: 200px;
+    float: left;
+}
+#infoContent
+{
+    width: 100%;
+   margin-left: -210px;
+   float:right;
+}
+#infoSection
+{
+   margin-left: 210px;
+    width: 770px;
+   margin-top: 10px;
+}
+#beginBracket
+{
+    width: 70px;
+}
+#closeBracket
+{
+    width: 20px;
+}
+
+#implement
+{
+    font-size: 36px;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    font-weight: bold;
+    display:block;
+}
+.bracket
+{
+    font-size: 300px;
+    line-height: 100px;
+    font-weight: lighter;
+}
+#infoSection table tr td
+{
+    vertical-align: middle;
+}
+#infoSectionMeDesc p
+{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+p.mailme
+{
+    margin-top: 5px;
+    float:left;
+    margin-right: 10px;
+}
+div#hireMe
+{
+    float:left;
+    padding: 30px 10px 30px 10px;
+}
+.mailme .leftCol
+{
+    display: inline-block;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    width: 150px;
+}
+
+/* Blog posts */
+
+h1#recent-blog-posts
+{
+    font-size: 24px;
+    margin-top: 20px;
+    display: inline-block;
+}
+hr.separator{
+    margin-bottom: 20px;
+}
+a.view-all-posts
+{
+    margin-left: 10px;
+    padding: 5px;
+}
+a.view-all-posts:hover
+{
+     color: #fff;
+    background-color: #4A91AC;   
+}
+
+.highlight code
+{
+    font-size: 12px;
+}
+
+.blog-posts { margin-bottom: 15px;}
+.blog-posts article
+{
+    clear: right;
+}
+.blog-posts article header
+{
+    margin-bottom: 0px;
+}
+.blog-posts article header h1
+{
+    font-size: 30px;
+    /*color: #4A91AC;*/
+    color: black;
+}
+.blog-posts article header time
+{
+    text-transform: lowercase;
+}
+.blog-posts article .post-content
+{
+    margin-top: 15px;
+}
+.blog-posts article .post-content h2
+{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+.blog-posts article .post-content a{
+    font-family: "Open Sans", Verdana, Helvetica, Sans-Serif;
+    color: #A00;
+}
+.blog-posts article .post-content a:hover{
+    text-decoration: underline;
+}
+
+.blog-posts article .post-content p,.blog-posts article .post-content ol
+{
+    margin-bottom: 10px;
+}
+.blog-posts article .post-content ol, .blog-posts article .post-content ul
+{
+    padding-left: 1.5em;
+}
+
+.post-content ul li{
+    margin: 0.5em auto;
+    list-style: disc;
+}
+.post-content ol li{
+    margin: 0.5em auto;       
+}
+.post-content ul li ul li{
+    list-style: circle;
+}
+.post-content pre{
+    white-space: pre;
+}
+.post-content code, .post-content code.inline{
+    display: block;
+    margin: 0.3em;
+    padding: 0.2em;
+    background: #f8f8ff;
+}
+.post-content code.inline{
+    display: inline;
+    color: #2b91af;
+}
+
+.post-content blockquote
+{
+    border-bottom: 3px double #DDD;
+    border-top: 3px double #DDD;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1.35em;
+    margin: 1.5em auto;
+    padding: 1em 1em;
+}
+
+.blog-posts article .post-readmore
+{
+    margin-top: 5px;
+    text-align: right;
+}
+.blog-posts article .post-readmore a
+{
+    padding: 7px;
+}
+.blog-posts article .post-readmore a:hover
+{
+        color: #fff;
+    background-color: #4A91AC;
+}
+hr.blog-posts-separator
+{
+    margin: 3em auto;
+}
+.gist
+{
+    font-size: 12px;
+}
+
+
+/* Project list */
+
+.projects-small article
+{
+    overflow: hidden;
+    clear: right;
+    margin-bottom: 15px;
+    background: #F2F2F2;
+    padding: 0px 10px 10px 10px;
+}
+
+.projects-small article header
+{
+    margin-bottom: 15px;
+    margin-left: -10px;
+    margin-top: 0px;
+}
+.projects-small article header h1
+{
+    font-size: 24px;
+    padding: 10px;
+    display: inline-block;
+    color: #fff;
+    background: #68217A;
+}
+.projects-small article .project-small-image
+{
+    width: 210px;
+    float: left;
+}
+.projects-small article a{
+        font-family: "Open Sans", Verdana, Helvetica, Sans-Serif;
+    color: #A00;
+}
+.project-small-content-wrap
+{
+    float: right;
+    width: 100%;
+    margin-left: -220px;
+}
+.projects-small article .project-small-content
+{
+    margin-left: 220px;
+}
+.projects-small article .project-small-content p,.projects-small article .project-small-content ol
+{
+    margin-bottom: 10px;
+}
+.projects-small article .project-small-content ol
+{
+    padding-left: 20px;
+}
+
+.projects-small article .project-small-readmore
+{
+    margin-top: 5px;
+    text-align: right;
+}
+
+/* CV  */
+div#cv{
+
+}
+div#cv div.cv-section
+{
+    clear: both;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+div#cv div.cv-section .title h1
+{
+    font-size: 24px;
+}
+
+div#cv div.cv-section .content .label
+{
+    width: 200px;
+    float: left;
+    clear: left;
+}
+div#cv div.cv-section .content .text
+{
+    float: left;
+    width: 700px;
+}
+h1.cv-position{
+    font-size: 20px;
+    color:#4A91AC;
+}
+span.cv-company{
+    font-size: 14px;
+}
+div.cv-skill
+{
+    float:left;
+    width: 310px;
+}
+
+
+[class^="icon-"], [class*=" icon-"] 
+{
+    display: inline-block;
+    line-height: 16px;
+    width: 16px;
+    height: 16px;    
+}
+i.icon-square-filled
+{
+    background: url('../images/square_filled.png');
+}
+i.icon-square-empty
+{
+    background: url('../images/square_empty.png');
+}
+.pagination
+{
+    overflow: hidden;
+}
+
+.pagination .next
+{
+    float: right;
+} 
+.pagination .previous
+{
+    float: left;
+}
+
+/* Responsive web design media queries */
+@media screen and (max-width: 980px){
+    div#container 
+    {
+        width: 100%;
+    }
+    body, #infoSection
+    {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 750px)
+{
+    .bracket, #implement
+    {
+        display: none;
+    }
+}
+@media screen and (max-width: 500px)
+{
+    #infoContent
+    {
+        width: auto;
+    }
+    nav
+    {
+        width: 250px;
+        float: left;
+    }
+    nav ul li
+    {
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+}

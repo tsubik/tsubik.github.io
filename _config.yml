@@ -1,0 +1,4 @@
+name: tsubik
+permalink: /:year/:month/:day/:title/
+paginate: 2
+paginate_per_category: true

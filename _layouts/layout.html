@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Open-minded software developer who loves creating useful web apps (C#, asp.net mvc, jQuery, javascript, ruby on rails)">
+    <title>{{ page.title }}</title>
+    <link href="/css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="/css/Site.css" rel="stylesheet" type="text/css" />
+    <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/css/pygments.css" rel="stylesheet" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600' rel='stylesheet' type='text/css'>
+    <!-- [if lt IE 9]>
+        <script src="scripts/css3-mediaqueries.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="/img/favicon.ico" />
+</head>
+<body>
+    <div id="container">
+        <header>
+        <section id="sectionMyName">
+        <a href="/" class="nounderline">
+            <h2>Tomasz Subik</h2>
+            <span id="myTitle">software developer</span>
+        </a>
+        </section>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/blog/">Blog</a></li>
+                <li><a href="/projects.html">Projects</a></li>
+            </ul>
+        </nav>
+        </header>
+        <div style="clear: both;">
+        {{content}}
+        <footer>
+            Copyright (c) 2012 Tomasz Subik
+        </footer>
+        </div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-11585946-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
