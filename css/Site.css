@@ -26,7 +26,7 @@ h2
 div.clear{
     clear:both;
 }
-div#container 
+div#container
 {
     width: 980px;
     position: relative;
@@ -133,46 +133,10 @@ footer
 }
 #infoContent
 {
-    width: 100%;
-   margin-left: -210px;
-   float:right;
-}
-#infoSection
-{
-   margin-left: 210px;
-    width: 770px;
-   margin-top: 10px;
-}
-#beginBracket
-{
-    width: 70px;
-}
-#closeBracket
-{
-    width: 20px;
-}
-
-#implement
-{
-    font-size: 36px;
-    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
-    font-weight: bold;
-    display:block;
-}
-.bracket
-{
-    font-size: 300px;
-    line-height: 100px;
-    font-weight: lighter;
-}
-#infoSection table tr td
-{
-    vertical-align: middle;
-}
-#infoSectionMeDesc p
-{
     font-size: 14px;
+    margin-left: 240px;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 p.mailme
 {
@@ -212,8 +176,8 @@ a.view-all-posts
 }
 a.view-all-posts:hover
 {
-     color: #fff;
-    background-color: #4A91AC;   
+    color: #fff;
+    background-color: #4A91AC;
 }
 
 .highlight code
@@ -272,7 +236,7 @@ a.view-all-posts:hover
     list-style: disc;
 }
 .post-content ol li{
-    margin: 0.5em auto;       
+    margin: 0.5em auto;
 }
 .post-content ul li ul li{
     list-style: circle;
@@ -425,12 +389,12 @@ div.cv-skill
 }
 
 
-[class^="icon-"], [class*=" icon-"] 
+[class^="icon-"], [class*=" icon-"]
 {
     display: inline-block;
     line-height: 16px;
     width: 16px;
-    height: 16px;    
+    height: 16px;
 }
 i.icon-square-filled
 {
@@ -448,7 +412,7 @@ i.icon-square-empty
 .pagination .next
 {
     float: right;
-} 
+}
 .pagination .previous
 {
     float: left;
@@ -456,7 +420,7 @@ i.icon-square-empty
 
 /* Responsive web design media queries */
 @media screen and (max-width: 980px){
-    div#container 
+    div#container
     {
         width: 100%;
     }
