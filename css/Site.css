@@ -5,8 +5,8 @@ to use a different color start by replacing all instances of
 ----------------------------------------------------------*/
 body {
     background-color: #ffffff;
-    font-size: 18px;
-    line-height: 1.5;
+    font-size: 16px;
+    line-height: 1.8em;
     font-family: "Open Sans", Verdana, Helvetica, Sans-Serif;
     margin: 0;
     padding: 0;
@@ -28,7 +28,7 @@ div.clear{
 }
 div#container
 {
-    max-width: 980px;
+    max-width: 780px;
     width: 90%;
     position: relative;
     margin: 0 auto;
@@ -60,6 +60,7 @@ a.nounderline
 }
 section#sectionMyName a
 {
+    font-weight: bold;
     color: #000;
 }
 section#sectionMyName
@@ -67,21 +68,24 @@ section#sectionMyName
     font-family: "Segoe UI Light", Verdana, Helvetica, Sans-Serif;
     float: left;
 }
-section#sectionMyName h2
-{
-    font-size: 40px;
-    line-height: 40px;
-    font-weight: lighter;
-}
-#myTitle
+section#sectionMyName .name
 {
     float: right;
-    font-size:  18px;
+    line-height: 1.1em;
+    margin-top: 7px;
+}
+section#sectionMyName .name small
+{
+    font-size: 12px;
+}
+section#sectionMyName img
+{
+    margin-right: 10px;
 }
 nav
 {
     float: right;
-    font-size: 26px;
+    font-size: 22px;
     margin-right: 10px;
 }
 nav ul
@@ -95,17 +99,14 @@ nav ul li
     margin-left: 15px;
     list-style: none;
 }
-nav ul li:hover
-{
-
-}
 nav ul li a{
     padding: 10px 10px 10px 10px;
 }
 nav ul li a:hover
 {
-        color: #fff;
+    color: #fff;
     background-color: #4A91AC;
+    text-decoration: none;
 }
 
 /* Copyright footer */
@@ -132,43 +133,21 @@ footer
     width: 200px;
     float: left;
 }
-#infoContent
-{
-    font-size: 14px;
-    margin-left: 240px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
 #infoContent p
 {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
-p.mailme
+#infoContent a
 {
-    margin-top: 5px;
-    float:left;
-    margin-right: 10px;
-}
-div#hireMe
-{
-    float:left;
-    padding: 30px 10px 30px 10px;
-}
-.mailme .leftCol
-{
-    display: inline-block;
-    line-height: 40px;
-    font-size: 18px;
-    font-weight: bold;
-    width: 150px;
+    color: #A00;
 }
 
 /* Blog posts */
 
 h1#recent-blog-posts
 {
-    font-size: 24px;
-    margin-top: 20px;
+    font-size: 18px;
+    margin-top: 14px;
     display: inline-block;
 }
 hr.separator{
@@ -183,6 +162,7 @@ a.view-all-posts:hover
 {
     color: #fff;
     background-color: #4A91AC;
+    text-decoration: none;
 }
 
 .highlight code
@@ -201,7 +181,7 @@ a.view-all-posts:hover
 }
 .blog-posts article header h1
 {
-    font-size: 30px;
+    font-size: 26px;
     /*color: #4A91AC;*/
     color: black;
 }
@@ -217,7 +197,7 @@ a.view-all-posts:hover
 {
     margin-top: 20px;
     margin-bottom: 10px;
-    font-size: 22px;
+    font-size: 20px;
 }
 .blog-posts article .post-content a{
     font-family: "Open Sans", Verdana, Helvetica, Sans-Serif;
@@ -235,7 +215,10 @@ a.view-all-posts:hover
 {
     padding-left: 1.5em;
 }
-
+.post-title
+{
+    margin-bottom: 5px;
+}
 .post-content ul li{
     margin: 0.5em auto;
     list-style: disc;
@@ -282,8 +265,9 @@ a.view-all-posts:hover
 }
 .blog-posts article .post-readmore a:hover
 {
-        color: #fff;
+    color: #fff;
     background-color: #4A91AC;
+    text-decoration: none;
 }
 hr.blog-posts-separator
 {
@@ -421,6 +405,11 @@ i.icon-square-empty
 .pagination .previous
 {
     float: left;
+}
+
+form span.req
+{
+  color: red;
 }
 
 /* Responsive web design media queries */

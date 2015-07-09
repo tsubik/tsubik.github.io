@@ -3,54 +3,49 @@ layout : layout
 title : Tomasz Subik Software Developer
 ---
 <div>
-    <div id="two-column-wrap">
-        <section id="infoPhoto">
-            <img src="images/ts3.jpg" />
-        </section>
-        <section id="infoContent">
-            <p>
-                Web and Hybrid Mobile App Developer who loves to create useful apps. Currently working with Ruby on Rails, AngularJS, Ember, Cordova and bunch of other cool technologies. Open source projects contributor.
-            </p>
-            <p>
-                Amateur hockey player, in the summer inline urban skater. Snow and ski lover. I also enjoy jogging, playing squash and swimming.
-            </p>
-            <p class="mailme">
-                <span class="leftCol">Mail me</span>tsubik@gmail.com <br />
-                <span class="leftCol">Find me on</span><a href="http://www.github.com/tsubik"><img src="images/github-icon.png" /></a><a href="http://www.goldenline.pl/tomasz-subik"><img src="images/goldenline-icon.png" /></a>
-            </p>
-            <div id="hireMe">
-                <a class="btn btn-large btn-success" href="mailto:tsubik@gmail.com">Want to hire me?</a>
-            </div>
-        </section>
-    </div>
+  <section id="infoContent">
+    <p>
+      <strong>Hello!</strong> I am <strong>Web</strong> and <strong>Hybrid Mobile</strong> App Developer who love to create useful apps. Currently working with <strong>Ruby on Rails</strong>, <strong>AngularJS</strong>, <strong>Ember</strong>, <strong>Cordova</strong> and bunch of other cool technologies. I am proud member of <a href="https://cowbell-labs.com/">Cowbell Labs</a> team. I am also Open Source projects contributor.
+    </p>
+    <p>
+      I am amateur hockey player and ice freestyler. In the summer time I switch ice skates over to rollerblades and begin blading
+      over the city. Beside of that: snow and ski lover, jogger, occasionally squash player.
+    </p>
+    <p>
+      You can mail me at <a href="mailto:tsubik@gmail">tsubik@gmail</a> or use <a href="/contact.html">contact form</a> to write me a message.
+    </p>
+    <p>
+      You can check my activity on <a href="https://github.com/tsubik">Github</a>.
+    </p>
+  </section>
 
-    <div style="clear:both;"></div>
-    <h1 id="recent-blog-posts">
-        Recent blog posts
-    </h1>
+  <div style="clear:both;"></div>
+  <h1 id="recent-blog-posts">
+    Below some of my latest posts
+  </h1>
 
-    <a href="/blog/" class="view-all-posts">view all posts...</a>
-        <hr class="separator"/>
-	      {% for post in site.categories.blog limit:2 %}
-          <section class="blog-posts">
-              <article>
-                  <header class="post-header">
-                      <a href="{{post.url}}">
-                      <h1 class="post-title">
-                          {{post.title}}
-                      </h1>
-                      </a>
-                      <p>
-                          <time datetime="{{ post.date }}">{{ post.date | date: "%d %B, %Y"  }}</time>
-                      </p>
-                  </header>
-                  <div class="post-content">
-                       {{ post.content | split:"<!--more-->" | first}}
-                  </div>
-                  <div class="post-readmore">
-                      <a href="{{post.url}}">Read more...</a>
-                  </div>
-              </article>
-          </section>
-        {% endfor %}
-   </div>
+  <a href="/blog/" class="view-all-posts">check out all of my posts...</a>
+  <hr class="separator"/>
+  {% for post in site.categories.blog limit:2 %}
+    <section class="blog-posts">
+      <article>
+        <header class="post-header">
+          <a href="{{post.url}}">
+          <h1 class="post-title">
+            {{post.title}}
+          </h1>
+          </a>
+          <p>
+            <time datetime="{{ post.date }}">{{post.date | date: "%d %B, %Y"}}</time>
+          </p>
+        </header>
+        <div class="post-content">
+          {{post.content | split:"<!--more-->" | first}}
+        </div>
+        <div class="post-readmore">
+          <a href="{{post.url}}">Read more...</a>
+        </div>
+      </article>
+    </section>
+  {% endfor %}
+</div>
