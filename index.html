@@ -1,6 +1,6 @@
 ---
 layout : layout
-title : Tomasz Subik software developer
+title : Tomasz Subik Software Developer
 ---
 <div>
     <div id="two-column-wrap">
@@ -9,7 +9,7 @@ title : Tomasz Subik software developer
         </section>
         <section id="infoContent">
             <p>
-                Web and hybrid mobile app developer who loves to create useful apps. Currently working with ruby on rails, angularjs, ember, cordova and bunch of other cool technologies. Open source projects contributor.
+                Web and Hybrid Mobile App Developer who loves to create useful apps. Currently working with Ruby on Rails, AngularJS, Ember, Cordova and bunch of other cool technologies. Open source projects contributor.
             </p>
             <p>
                 Amateur hockey player, in the summer inline urban skater. Snow and ski lover. I also enjoy jogging, playing squash and swimming.
@@ -31,26 +31,26 @@ title : Tomasz Subik software developer
 
     <a href="/blog/" class="view-all-posts">view all posts...</a>
         <hr class="separator"/>
-	{% for post in site.categories.blog limit:2 %}
-        <section class="blog-posts">
-            <article>
-                <header class="post-header">
-                    <a href="{{post.url}}">
-                    <h1 class="post-title">
-                        {{post.title}}
-                    </h1>
-                    </a>
-                    <p>
-                        <time datetime="{{ post.date }}">{{ post.date | date: "%d %B, %Y"  }}</time>
-                    </p>
-                </header>
-                <div class="post-content">
-                     {{ post.content | split:"<!--more-->" | first}}
-                </div>
-                <div class="post-readmore">
-                    <a href="{{post.url}}">Read more...</a>
-                </div>
-            </article>
-        </section>
-    {% endfor %}
+	      {% for post in site.categories.blog limit:2 %}
+          <section class="blog-posts">
+              <article>
+                  <header class="post-header">
+                      <a href="{{post.url}}">
+                      <h1 class="post-title">
+                          {{post.title}}
+                      </h1>
+                      </a>
+                      <p>
+                          <time datetime="{{ post.date }}">{{ post.date | date: "%d %B, %Y"  }}</time>
+                      </p>
+                  </header>
+                  <div class="post-content">
+                       {{ post.content | split:"<!--more-->" | first}}
+                  </div>
+                  <div class="post-readmore">
+                      <a href="{{post.url}}">Read more...</a>
+                  </div>
+              </article>
+          </section>
+        {% endfor %}
    </div>

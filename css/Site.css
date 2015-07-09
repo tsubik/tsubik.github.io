@@ -28,7 +28,8 @@ div.clear{
 }
 div#container
 {
-    width: 980px;
+    max-width: 980px;
+    width: 90%;
     position: relative;
     margin: 0 auto;
 }
@@ -137,6 +138,10 @@ footer
     margin-left: 240px;
     margin-bottom: 10px;
     margin-top: 10px;
+}
+#infoContent p
+{
+  margin-bottom: 10px;
 }
 p.mailme
 {
@@ -420,10 +425,6 @@ i.icon-square-empty
 
 /* Responsive web design media queries */
 @media screen and (max-width: 980px){
-    div#container
-    {
-        width: 100%;
-    }
     body, #infoSection
     {
         width: auto;
