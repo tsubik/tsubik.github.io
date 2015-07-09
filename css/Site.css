@@ -85,7 +85,6 @@ section#sectionMyName img
 nav
 {
     float: right;
-    font-size: 22px;
     margin-right: 10px;
 }
 nav ul
@@ -181,8 +180,7 @@ a.view-all-posts:hover
 }
 .blog-posts article header h1
 {
-    font-size: 26px;
-    /*color: #4A91AC;*/
+    font-size: 24px;
     color: black;
 }
 .blog-posts article header time
