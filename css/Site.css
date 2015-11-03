@@ -192,10 +192,6 @@ a.view-all-posts:hover {
     color: black;
 }
 
-.blog-posts article header time {
-    text-transform: lowercase;
-}
-
 .blog-posts article .post-content {
     margin-top: 15px;
 }
