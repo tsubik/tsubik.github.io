@@ -164,6 +164,10 @@ a.view-all-posts:hover
     text-decoration: none;
 }
 
+.highlight {
+    padding: 10px 0px;
+}
+
 .highlight code
 {
     font-size: 12px;
@@ -203,11 +207,6 @@ a.view-all-posts:hover
 }
 .blog-posts article .post-content a:hover{
     text-decoration: underline;
-}
-
-.blog-posts article .post-content p,.blog-posts article .post-content ol
-{
-    margin-bottom: 10px;
 }
 .blog-posts article .post-content ol, .blog-posts article .post-content ul
 {
