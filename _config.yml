@@ -1,7 +1,7 @@
+gems: [jekyll-paginate]
 name: tsubik
 permalink: /:year/:month/:day/:title/
 paginate: 2
-paginate_per_category: true
-exclude: ['Gemfile', 'Gemfile.lock', 'deploy.sh', 'README.md']
+exclude: ["Gemfile", "Gemfile.lock", "README.md"]
 include:
 - .nojekyll
