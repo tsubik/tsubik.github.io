@@ -1,0 +1,29 @@
+---
+layout : layout
+title : Blog | Tomasz Subik software developer
+---
+
+<div>
+  {% for post in site.posts %}
+  <section class="blog-posts">
+    <article>
+      <header class="post-header">
+        <a href="{{post.url}}">
+          <h1 class="post-title">
+            {{post.title}}
+          </h1>
+        </a>
+        <p>
+          <time datetime="{{ post.date }}">{{post.date | date: "%B %d, %Y"}}</time>
+        </p>
+      </header>
+      <div class="post-content">
+        {{post.content | split:"<!--more-->" | first}}
+      </div>
+      <div class="post-readmore">
+        <a href="{{post.url}}">Read more...</a>
+      </div>
+    </article>
+  </section>
+  {% endfor %}
+</div>
