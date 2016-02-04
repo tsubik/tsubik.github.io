@@ -394,18 +394,6 @@ i.icon-square-empty {
     background: url('../images/square_empty.png');
 }
 
-.pagination {
-    overflow: hidden;
-}
-
-.pagination .next {
-    float: right;
-}
-
-.pagination .previous {
-    float: left;
-}
-
 form span.req {
     color: red;
 }
