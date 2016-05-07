@@ -1,4 +1,4 @@
---- 
+---
 layout: post
 title: "Emacs for a Sublime Text user"
 tags: ["emacs", "sublime", "texteditor"]
@@ -10,11 +10,10 @@ permalink: /blog/emacs-for-a-sublime-text-user
 A few weeks ago I decided to switch most of my development work to Emacs. Let me say it upfront, I don’t want to take a part in any "holy war" around which text editor is best or whatever. I just want to share my experience here, how did that switch look like from the standpoint of 'typical’ Sublime Text user.
 
 <!--more-->
-<br>
 
 I still think that Sublime Text is a magnificent piece of software, it’s beautiful, it’s pretty damn fast, well-configured out of the box, and so on. So you may ask me: Why did you decide to make a switch? To cut a long story short, I just wanted to try something else, something a way different that will broaden my perspective. Maybe I will return to Sublime in about month or two, who knows. I have no intentions to make "why to switch" and "why Emacs" the main topic of this entry and my only goal is to pinpoint what I have missed from Sublime after few weeks of using Emacs and what can I do about it.
 
-## Autocomplete 
+## Autocomplete
 
 This is pretty straightforward, install package named [auto-complete][auto-complete]. I’m using the default configuration.
 
@@ -22,7 +21,7 @@ This is pretty straightforward, install package named [auto-complete][auto-compl
 (ac-config-default)
 {% endhighlight %}
 
-## Multiple cursors 
+## Multiple cursors
 
 There is [multiple-cursors][multiple-cursors] for that. It’s pretty awesome. You need to bring up your own keybindings.
 
@@ -34,7 +33,7 @@ There is [multiple-cursors][multiple-cursors] for that. It’s pretty awesome. Y
 (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
 {% endhighlight %}
 
-## Smart parenthesis 
+## Smart parenthesis
 
 I love Sublime auto pairing brackets, parenthesis and guess what? There is a package for this in Emacs too. It’s called [smartparens][smartparens] and actually, it gives you much more than just inserting pairs. There is also wrapping, unwrapping, rewrapping, expanding, etc. If you want to use that package everywhere, put this into your config.
 
