@@ -70,7 +70,7 @@ section#sectionMyName {
 section#sectionMyName .name {
   float: right;
   line-height: 1.1em;
-  margin-top: 7px;
+  margin-top: 10px;
 }
 
 section#sectionMyName .name small {
@@ -84,6 +84,7 @@ section#sectionMyName img {
 nav {
   float: right;
   margin-right: 10px;
+  margin-top: 10px;
 }
 
 nav ul {
