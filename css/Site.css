@@ -1,46 +1,48 @@
 body {
-    background-color: #ffffff;
-    font-size: 16px;
-    line-height: 1.8em;
-    font-family: "Open Sans", Verdana, Helvetica, Sans-Serif;
-    margin: 0;
-    padding: 0;
-    color: #000000;
+  background-color: #fff;
+  font-size: 16px;
+  line-height: 1.8em;
+  font-family: "Open Sans", Verdana, Helvetica, Sans-Serif;
+  margin: 0;
+  padding: 0;
+  color: #000;
 }
 
 hr {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 h2 {
-    font-size: 20px;
-    padding-bottom: 5px;
-    padding-top: 5px;
+  font-size: 20px;
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 
 div.clear {
-    clear: both;
+  clear: both;
 }
 
 div#container {
-    max-width: 700px;
-    width: 90%;
-    position: relative;
-    margin: 0 auto;
+  max-width: 700px;
+  width: 90%;
+  position: relative;
+  margin: 0 auto;
 }
 
-a, a:visited {
-    text-decoration: none;
-    color: #000;
+a,
+a:visited {
+  text-decoration: none;
+  color: #000;
 }
 
-a:hover, a:focus {
-    color: #000;
+a:hover,
+a:focus {
+  color: #000;
 }
 
 a.nounderline {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .text-center {
@@ -50,69 +52,69 @@ a.nounderline {
 /* header with navigation */
 
 #container > header {
-    overflow: hidden;
-    margin-bottom: 50px;
-    margin-top: 40px;
+  overflow: hidden;
+  margin-bottom: 50px;
+  margin-top: 40px;
 }
 
 section#sectionMyName a {
-    font-weight: bold;
-    color: #000;
+  font-weight: bold;
+  color: #000;
 }
 
 section#sectionMyName {
-    font-family: "Segoe UI Light", Verdana, Helvetica, Sans-Serif;
-    float: left;
+  font-family: "Segoe UI Light", Verdana, Helvetica, Sans-Serif;
+  float: left;
 }
 
 section#sectionMyName .name {
-    float: right;
-    line-height: 1.1em;
-    margin-top: 7px;
+  float: right;
+  line-height: 1.1em;
+  margin-top: 7px;
 }
 
 section#sectionMyName .name small {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 section#sectionMyName img {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 nav {
-    float: right;
-    margin-right: 10px;
+  float: right;
+  margin-right: 10px;
 }
 
 nav ul {
-    list-style: none;
-    padding-left: 0px;
+  list-style: none;
+  padding-left: 0px;
 }
 
 nav ul li {
-    float: left;
-    margin-left: 15px;
-    list-style: none;
+  float: left;
+  margin-left: 15px;
+  list-style: none;
 }
 
 nav ul li a {
-    padding: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
 }
 
 nav ul li a:hover {
-    color: #fff;
-    background-color: #4A91AC;
-    text-decoration: none;
+  color: #fff;
+  background-color: #4A91AC;
+  text-decoration: none;
 }
 
 
 /* Copyright footer */
 
 footer {
-    font-size: 14px;
-    margin-top: 40px;
-    padding: 10px 0px 10px 0px;
-    text-align: center;
+  font-size: 14px;
+  margin-top: 40px;
+  padding: 10px 0px 10px 0px;
+  text-align: center;
 }
 
 
@@ -123,23 +125,23 @@ footer {
 }
 
 #two-column-wrap {
-    overflow: hidden;
-    float: left;
-    width: 100%;
-    position: relative;
+  overflow: hidden;
+  float: left;
+  width: 100%;
+  position: relative;
 }
 
 #infoPhoto {
-    width: 200px;
-    float: left;
+  width: 200px;
+  float: left;
 }
 
 #infoContent p {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 #infoContent a {
-    color: #A00;
+  color: #A00;
 }
 
 .section-header {
@@ -169,201 +171,201 @@ footer {
 /* Blog posts */
 
 h1#recent-blog-posts {
-    font-size: 18px;
-    margin-top: 14px;
-    display: inline-block;
+  font-size: 18px;
+  margin-top: 14px;
+  display: inline-block;
 }
 
 hr.separator {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 a.view-all-posts {
-    margin-left: 10px;
-    padding: 5px;
+  margin-left: 10px;
+  padding: 5px;
 }
 
 a.view-all-posts:hover {
-    color: #fff;
-    background-color: #4A91AC;
-    text-decoration: none;
+  color: #fff;
+  background-color: #4A91AC;
+  text-decoration: none;
 }
 
 .highlight {
-    padding: 10px 0px;
+  padding: 10px 0px;
 }
 
 .highlight code {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .blog-posts {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .blog-posts article {
-    clear: right;
+  clear: right;
 }
 
 .blog-posts article header {
-    margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 .blog-posts article header h1 {
-    font-size: 24px;
-    color: black;
+  font-size: 24px;
+  color: #000;
 }
 
 .blog-posts article .post-content {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
 .blog-posts article .post-content h2 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 20px;
 }
 
 .blog-posts article .post-content a {
-    font-family: "Open Sans", Verdana, Helvetica, Sans-Serif;
-    color: #A00;
+  font-family: "Open Sans", Verdana, Helvetica, Sans-Serif;
+  color: #A00;
 }
 
 .blog-posts article .post-content a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .blog-posts article .post-content ol, .blog-posts article .post-content ul {
-    padding-left: 1.5em;
+  padding-left: 1.5em;
 }
 
 .post-title {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .post-content p {
-    padding-bottom: 7px;
-    padding-top: 7px;
+  padding-bottom: 7px;
+  padding-top: 7px;
 }
 
 .post-content ul li {
-    margin: 0.5em auto;
-    list-style: disc;
+  margin: 0.5em auto;
+  list-style: disc;
 }
 
 .post-content ol li {
-    margin: 0.5em auto;
+  margin: 0.5em auto;
 }
 
 .post-content ul li ul li {
-    list-style: circle;
+  list-style: circle;
 }
 
 .post-content pre {
-    white-space: pre;
+  white-space: pre;
 }
 
 .post-content code, .post-content code.inline {
-    display: block;
-    margin: 0.3em;
-    padding: 0.2em;
-    background: #f8f8ff;
+  display: block;
+  margin: 0.3em;
+  padding: 0.2em;
+  background: #f8f8ff;
 }
 
 .post-content code.inline {
-    display: inline;
-    color: #2b91af;
+  display: inline;
+  color: #2b91af;
 }
 
 .post-content blockquote {
-    border-bottom: 3px double #DDD;
-    border-top: 3px double #DDD;
-    font-style: italic;
-    font-weight: 300;
-    line-height: 1.35em;
-    margin: 1.5em auto;
-    padding: 1em 1em;
+  border-bottom: 3px double #DDD;
+  border-top: 3px double #DDD;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.35em;
+  margin: 1.5em auto;
+  padding: 1em 1em;
 }
 
 .blog-posts article .post-readmore {
-    margin-top: 5px;
-    text-align: right;
+  margin-top: 5px;
+  text-align: right;
 }
 
 .blog-posts article .post-readmore a {
-    padding: 7px;
+  padding: 7px;
 }
 
 .blog-posts article .post-readmore a:hover {
-    color: #fff;
-    background-color: #4A91AC;
-    text-decoration: none;
+  color: #fff;
+  background-color: #4A91AC;
+  text-decoration: none;
 }
 
 hr.blog-posts-separator {
-    margin: 3em auto;
+  margin: 3em auto;
 }
 
 .gist {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 
 /* Project list */
 
 .projects-small article {
-    overflow: hidden;
-    clear: right;
-    margin-bottom: 15px;
-    background: #F2F2F2;
-    padding: 0px 10px 10px 10px;
+  overflow: hidden;
+  clear: right;
+  margin-bottom: 15px;
+  background: #F2F2F2;
+  padding: 0px 10px 10px 10px;
 }
 
 .projects-small article header {
-    margin-bottom: 15px;
-    margin-left: -10px;
-    margin-top: 0px;
+  margin-bottom: 15px;
+  margin-left: -10px;
+  margin-top: 0px;
 }
 
 .projects-small article header h1 {
-    font-size: 24px;
-    padding: 10px;
-    display: inline-block;
-    color: #fff;
-    background: #68217A;
+  font-size: 24px;
+  padding: 10px;
+  display: inline-block;
+  color: #fff;
+  background: #68217A;
 }
 
 .projects-small article .project-small-image {
-    width: 210px;
-    float: left;
+  width: 210px;
+  float: left;
 }
 
 .projects-small article a {
-    font-family: "Open Sans", Verdana, Helvetica, Sans-Serif;
-    color: #A00;
+  font-family: "Open Sans", Verdana, Helvetica, Sans-Serif;
+  color: #A00;
 }
 
 .project-small-content-wrap {
-    float: right;
-    width: 100%;
-    margin-left: -220px;
+  float: right;
+  width: 100%;
+  margin-left: -220px;
 }
 
 .projects-small article .project-small-content {
-    margin-left: 220px;
+  margin-left: 220px;
 }
 
 .projects-small article .project-small-content p, .projects-small article .project-small-content ol {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .projects-small article .project-small-content ol {
-    padding-left: 20px;
+  padding-left: 20px;
 }
 
 .projects-small article .project-small-readmore {
-    margin-top: 5px;
-    text-align: right;
+  margin-top: 5px;
+  text-align: right;
 }
 
 
@@ -372,88 +374,88 @@ hr.blog-posts-separator {
 div#cv {}
 
 div#cv div.cv-section {
-    clear: both;
-    margin-bottom: 20px;
-    overflow: hidden;
+  clear: both;
+  margin-bottom: 20px;
+  overflow: hidden;
 }
 
 div#cv div.cv-section .title h1 {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 div#cv div.cv-section .content .label {
-    width: 200px;
-    float: left;
-    clear: left;
+  width: 200px;
+  float: left;
+  clear: left;
 }
 
 div#cv div.cv-section .content .text {
-    float: left;
-    width: 700px;
+  float: left;
+  width: 700px;
 }
 
 h1.cv-position {
-    font-size: 20px;
-    color: #4A91AC;
+  font-size: 20px;
+  color: #4A91AC;
 }
 
 span.cv-company {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 div.cv-skill {
-    float: left;
-    width: 310px;
+  float: left;
+  width: 310px;
 }
 
 [class^="icon-"], [class*=" icon-"] {
-    display: inline-block;
-    line-height: 16px;
-    width: 16px;
-    height: 16px;
-}
+                    display: inline-block;
+                    line-height: 16px;
+                    width: 16px;
+                    height: 16px;
+                  }
 
 i.icon-square-filled {
-    background: url('../images/square_filled.png');
+  background: url('../images/square_filled.png');
 }
 
 i.icon-square-empty {
-    background: url('../images/square_empty.png');
+  background: url('../images/square_empty.png');
 }
 
 form span.req {
-    color: red;
+  color: red;
 }
 
 .center {
-    text-align: center;
+  text-align: center;
 }
 
 
 /* Responsive web design media queries */
 
 @media screen and (max-width: 980px) {
-    body, #infoSection {
-        width: auto;
-    }
+  body, #infoSection {
+    width: auto;
+  }
 }
 
 @media screen and (max-width: 750px) {
-    .bracket, #implement {
-        display: none;
-    }
+  .bracket, #implement {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 500px) {
-    #infoContent {
-        width: auto;
-    }
-    nav {
-        width: 250px;
-        float: left;
-    }
-    nav ul li {
-        margin-left: 0px;
-        margin-right: 15px;
-    }
+  #infoContent {
+    width: auto;
+  }
+  nav {
+    width: 250px;
+    float: left;
+  }
+  nav ul li {
+    margin-left: 0px;
+    margin-right: 15px;
+  }
 }
