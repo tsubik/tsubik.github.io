@@ -2,7 +2,7 @@
 layout : layout
 title : Tomasz Subik Software Developer
 ---
-<div>
+<div class="index-page">
   <section id="infoContent">
     <p>
       <strong>Hello</strong>, I'm Tomasz! A <strong>Full Stack Developer</strong> with almost a decade of experience.
@@ -28,32 +28,58 @@ title : Tomasz Subik Software Developer
     </p>
   </section>
 
-  <h1 id="recent-blog-posts">
-    Below some of my latest posts
-  </h1>
+  <section class="blog-posts">
+    <div class="section-header">
+      <img src="images/pen.png" alt="Below some of my latest posts"/>
+    </div>
 
-  <a href="/blog/" class="view-all-posts">check out all of my posts...</a>
-  <hr class="separator"/>
-  {% for post in site.posts limit:2 %}
-    <section class="blog-posts">
-      <article>
-        <header class="post-header">
-          <a href="{{post.url}}">
+    {% for post in site.posts limit:2 %}
+    <article>
+      <header class="post-header text-center">
+        <a href="{{post.url}}">
           <h1 class="post-title">
             {{post.title}}
           </h1>
-          </a>
-          <p>
-            <time datetime="{{ post.date }}">{{post.date | date: "%B %d, %Y"}}</time>
-          </p>
-        </header>
-        <div class="post-content">
-          {{post.content | split:"<!--more-->" | first}}
-        </div>
-        <div class="post-readmore">
-          <a href="{{post.url}}">Read more...</a>
-        </div>
-      </article>
-    </section>
-  {% endfor %}
+        </a>
+        <p>
+          <time datetime="{{post.date}}">{{post.date | date: "%B %d, %Y"}}</time>
+        </p>
+      </header>
+      <div class="post-content">
+        {{post.content | split:"<!--more-->" | first}}
+      </div>
+      <div class="post-readmore">
+        <a href="{{post.url}}">Read more...</a>
+      </div>
+    </article>
+    {% endfor %}
+
+    <article>
+      <header class="post-header text-center">
+        <a href="{{post.url}}">
+          <h1 class="post-title">
+            Check out all of my posts...
+          </h1>
+        </a>
+      </header>
+    </article>
+  </section>
+
+  <section class="testimonials">
+    <div class="section-header">
+      <img src="images/quote.png" alt="Testimonials"/>
+    </div>
+
+    {% for testimonial in site.data.testimonials %}
+    <article class="testimonial">
+      <div class="testimonial-content">
+        {{testimonial.content}}
+      </div>
+      <div class="testimonial-author">
+        {{testimonial.author}}
+        <img class="img-circle" src="images/testimonials/{{testimonial.picture}}" width="70">
+      </div>
+    </article>
+    {% endfor %}
+  </section>
 </div>
