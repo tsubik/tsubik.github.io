@@ -33,8 +33,6 @@ You will also need to install a couple more things.
 
   npm install eslint-config-airbnb-base --save-dev
   npm install eslint-plugin-import --save-dev
-  npm install eslint-plugin-babel --save-dev
-  npm install babel-eslint --save-dev
 
 {% endhighlight %}
 
@@ -51,12 +49,6 @@ And my entire <code class="inline">.eslintrc</code> file
     "node": true
   },
 
-  "parser": "babel-eslint",
-
-  "plugins": [
-    "babel"
-  ],
-
   "rules": {
     "quotes": [2, "double", "avoid-escape"],
     "indent": [2, 4],
@@ -64,8 +56,6 @@ And my entire <code class="inline">.eslintrc</code> file
     "no-use-before-define": [2, "nofunc"],
     "prefer-arrow-callback": 0,
     "prefer-rest-params": 0,
-    "new-cap": 0,
-    "babel/new-cap": 1,
     "import/no-unresolved": 0,
     "no-underscore-dangle": 0
   }
