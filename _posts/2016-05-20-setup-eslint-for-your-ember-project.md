@@ -20,6 +20,7 @@ However, now it seems to be a really easy job to do.
 Which are:
 
 * uninstall <code class="inline">ember-cli-jshint</code>
+* install eslint <code class="inline">npm install eslint --save-dev</code>
 * <code class="inline">ember install ember-cli-eslint</code>
 * that's it. You can start configuring
 * if you want to use plugins <code class="inline">npm install eslint-plugin-import --save-dev</code>
