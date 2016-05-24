@@ -13,6 +13,10 @@ A few weeks ago I decided to switch most of my development work to Emacs. Let me
 
 I still think that Sublime Text is a magnificent piece of software, it’s beautiful, it’s pretty damn fast, well-configured out of the box, and so on. So you may ask me: Why did you decide to make a switch? To cut a long story short, I just wanted to try something else, something a way different that will broaden my perspective. Maybe I will return to Sublime in about month or two, who knows. I have no intentions to make "why to switch" and "why Emacs" the main topic of this entry and my only goal is to pinpoint what I have missed from Sublime after few weeks of using Emacs and what can I do about it.
 
+> Update [24.05.2016]: I've finally set up with [Emacs prelude][emacs-prelude]. After few months of using it,
+I could highly recommend it for anyone whether you are a newbie or more experienced Emacs user. Emacs prelude comes with many great packages and features configured out of the box. What's more, it is easy to customize. Here is the [repo][emacs-prelude-config]
+where I store my prelude personal configuration.
+
 ## Autocomplete
 
 This is pretty straightforward, install package named [auto-complete][auto-complete]. I’m using the default configuration.
@@ -85,6 +89,8 @@ To enable flex matching in Emacs command interface (M-x) I installed [smex][smex
 
 I consider myself as an Emacs Noob so I guess above list will be appended in time and also please correct me if I wrote some gibberish here.
 
+[emacs-prelude]: https://github.com/bbatsov/prelude
+[emacs-prelude-config]: https://github.com/tsubik/emacs-prelude-personal
 [auto-complete]: https://github.com/auto-complete/auto-complete
 [multiple-cursors]: https://github.com/magnars/multiple-cursors.el
 [smartparens]: https://github.com/Fuco1/smartparens
