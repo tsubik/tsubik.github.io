@@ -11,7 +11,7 @@ Anyone who follows the latest trends in front-end technologies probably came acr
 "Progressive Web Apps". It's not a new concept, but [the latest Google I/O conference][google-io-conference]
 shed new light on it and gather some extra technologies and libraries which could help you to make apps more
 "progressive". I want to show you how with a little effort you could start applying those concepts.
-This is the first part of the series in which I will show you some enhancements, you could pick up.
+This is the first part of the series in which I will present you some enhancements you could pick up.
 
 <!--more-->
 
