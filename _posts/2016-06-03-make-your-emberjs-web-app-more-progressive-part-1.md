@@ -32,7 +32,7 @@ It's called [Splittypie][splittypie] and it is an easy expense splitter. The app
 Ember.js and source code is available [here][splittypie-source]. It is already mobile friendly
 to some extent, it's responsive, looks like a mobile app on mobile devices, it also has nice
 mobile friendly drawer ;). I will continuously try to add Progressive Web App
-enhancements on [offline support branch][offline-support-branch] and publish new version [here][splittypie-offline]
+enhancements on [offline support branch][offline-support-branch] and publish new version [here][splittypie-offline].
 
 ## Home screen launcher, Splash screen, fullscreen mode
 
@@ -165,7 +165,7 @@ meta tags to document's head element.
 
 {% endhighlight %}
 
-Just follow the [official guidelines][ios-home-screen].
+Just follow [the official guidelines][ios-home-screen].
 
 ## Conclusions
 
