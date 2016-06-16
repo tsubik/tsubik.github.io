@@ -2,7 +2,7 @@
 layout: post
 title: "Make your Ember.js web app more progressive - part 2: Offline caching"
 tags: ["ember", "progressive", "mobile-friendly", "offline-mode"]
-date: 2016-06-13
+date: 2016-06-16
 author: "Tomasz Subik"
 permalink: /blog/make-your-emberjs-web-app-more-progressive-part-2-offline-caching
 ---
