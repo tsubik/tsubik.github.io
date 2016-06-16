@@ -221,7 +221,7 @@ caching Google fonts using "fastest strategy". About cache strategies you can re
 ## What's next?
 
 Unfortunately, my [SplittyPie][splittypie] still doesn't work without internet connection as
-I'm using firebase as a data layer. That's why the next part is going to be offline data access
+I'm using firebase as a data layer. That's why the next part is going to be about an offline data access
 and synchronization.
 
 [first-post]: https://tsubik.com/blog/make-your-emberjs-web-app-more-progressive-part-1
