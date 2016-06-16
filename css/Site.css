@@ -273,8 +273,8 @@ a.view-all-posts:hover {
   background: #f8f8ff;
 }
 
-.post-content code.inline {
-  display: inline;
+.post-content code.inline, .post-content code.highlighter-rouge  {
+  display: inline-block;
   color: #2b91af;
 }
 
