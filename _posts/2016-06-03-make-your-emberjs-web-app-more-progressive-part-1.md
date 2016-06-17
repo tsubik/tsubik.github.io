@@ -172,8 +172,7 @@ Just follow [the official guidelines][ios-home-screen].
 A Progressive Web App uses modern web capabilities to deliver a native app-like user experience.
 You can start small and make your app more mobile friendly today. There are a lot of great articles
 about Progressive Web Apps out there, you can start with [Addy Osmani's article][addy-blog-post].
-I know, I barely scratch the surface in this post. The next part will be dedicated to assets caching.
-I hope, I'll find time to write it soon.
+I know, I barely scratch the surface in this post. See [the next part][the-next-part] dedicated to assets caching.
 
 [google-io-conference]: https://events.google.com/io2016
 [google-progressive-web-apps]: https://developers.google.com/web/progressive-web-apps
@@ -188,3 +187,4 @@ I hope, I'll find time to write it soon.
 [web-app-install-banners]: https://developers.google.com/web/updates/2015/03/increasing-engagement-with-app-install-banners-in-chrome-for-android
 [ios-home-screen]: https://developer.apple.com/library/ios/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html
 [addy-blog-post]: https://addyosmani.com/blog/getting-started-with-progressive-web-apps
+[the-next-part]: https://tsubik.com/blog/make-your-emberjs-web-app-more-progressive-part-2-offline-caching
