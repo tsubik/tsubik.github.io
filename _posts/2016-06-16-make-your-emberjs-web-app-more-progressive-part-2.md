@@ -8,8 +8,8 @@ permalink: /blog/make-your-emberjs-web-app-more-progressive-part-2-offline-cachi
 image: pwa-splittypie-offline.png
 ---
 
-This is the second part of the series about making your ember app more mobile friendly,
-more progressive. [The first part][first-post] was about adding Home Screen icons,
+This is the second part of the series about making your ember app more mobile friendly.
+[The first part][first-post] was about adding Home Screen icons,
 Splashscreen, and controlling app shell display on mobile devices. This time, I want to
 write more about offline assets caching.
 

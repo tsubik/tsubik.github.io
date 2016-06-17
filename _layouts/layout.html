@@ -17,7 +17,7 @@
     {% endif %}
     <meta name="twitter:description" content="{{ page.content | strip_html | xml_escape | truncate: 200 }}">
     {% if page.image %}
-    <meta name="twitter:image:src" content="{{ site.url }}/images/blog/{{ page.image }}">
+    <meta name="twitter:image:src" content="https://tsubik.com/images/blog/{{ page.image }}">
     {% endif %}
     <title>{{ page.title }}</title>
     <link href="/css/reset.css" rel="stylesheet" type="text/css" />
