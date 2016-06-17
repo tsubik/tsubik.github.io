@@ -195,7 +195,7 @@ See my current setup below.
 
 {% highlight javascript %}
 
-ENV.serviceWorker: {
+ENV.serviceWorker = {
   enabled: true,
   debug: true,
   serviceWorkerFile: "offline-support.js",
