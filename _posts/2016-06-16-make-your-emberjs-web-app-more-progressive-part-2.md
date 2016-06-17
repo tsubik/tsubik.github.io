@@ -17,12 +17,11 @@ write more about offline assets caching.
 
 ## Offline caching - quick recap
 
-Offline caching is on the market for many years, and browsers, of course, can cache pages
-and assets too, but this mechanism cannot be reliable as a browser can throw out cache at
-any point. The main point of all this hassle is for you to be able to visit the application site
-subsequent time without Internet connection. There is an [ApplicationCache interface][app-cache-beginners]
+Some offline caching techniques are available for many years. There is a standard browser cache, but this mechanism
+cannot be reliable as a browser can throw our cache out at any point in time.
+There is also an [ApplicationCache interface][app-cache-beginners]
 to tackle this problem, but it is obsolete now, and you had to [mind many gotchas][app-cache-douchebag] along the way of using it.
-The new way utilizes [service workers][service-workers] to achieve the same goal.
+Fortunately, there is a new way which utilizes [service workers][service-workers] to achieve the same goal.
 
 ## What is a service worker?
 
@@ -77,7 +76,7 @@ and another [fetch event][fetch-event] that we will be using to serve cached ass
 Part of the Service Worker API is a [Cache Interface][cache-interface] which provides
 a storage mechanism for your assets. You are responsible for handling cache updates/purge/etc.
 
-Here is a simple example how we could use install event to cache your assets.
+Here is a simple example how we could use install event to cache assets.
 
 {% highlight javascript %}
 
