@@ -270,11 +270,13 @@ a.view-all-posts:hover {
   display: block;
   margin: 0.3em;
   padding: 0.2em;
+  line-height: 1.5em;
   background: #f8f8ff;
 }
 
 .post-content code.inline, .post-content code.highlighter-rouge  {
   display: inline-block;
+  margin: 0px;
   color: #2b91af;
 }
 

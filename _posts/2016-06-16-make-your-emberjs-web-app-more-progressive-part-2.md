@@ -56,13 +56,12 @@ First you have to register it.
 {% highlight javascript %}
 
 if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("sw.js").then(function(reg) {
+  navigator.serviceWorker.register("sw.js").then(function (reg) {
     console.log("Service worker registered");
-  }).catch(function(error) {
+  }).catch(function (error) {
     // registration failed
     console.log("Registration failed with " + error);
   });
-};
 }
 
 {% endhighlight %}
@@ -179,8 +178,8 @@ In order to enable this addon, add some configuration into `app/config/environme
 {% highlight javascript %}
 
 ENV.serviceWorker = {
-    enabled: true,
-    debug: true,
+  enabled: true,
+  debug: true,
 };
 
 {% endhighlight %}
@@ -197,19 +196,21 @@ See my current setup below.
 {% highlight javascript %}
 
 ENV.serviceWorker: {
-    enabled: true,
-    debug: true,
-    precacheURLs: [
-        "/app.html",
-    ],
-    fastestURLs: [
-        { route: "/(.*)", method: "get", options: { origin: "https://fonts.gstatic.com" } },
-        { route: "/css", method: "get", options: { origin: "https://fonts.googleapis.com" } },
-    ],
-    fallback: [
-        "/(.*) /app.html",
-    ],
-},
+  enabled: true,
+  debug: true,
+  serviceWorkerFile: "offline-support.js",
+  includeRegistration: false, // registering in app/initializers/offline-support
+  precacheURLs: [
+    "/app.html",
+  ],
+  fastestURLs: [
+    { route: "/(.*)", method: "get", options: { origin: "https://fonts.gstatic.com" } },
+    { route: "/css", method: "get", options: { origin: "https://fonts.googleapis.com" } },
+  ],
+  fallback: [
+    "/(.*) /app.html",
+  ],
+};
 
 {% endhighlight %}
 
@@ -217,6 +218,48 @@ I'm using different preloader page for other than index page requests (app.html 
 that's why the need of pre-cache this page and fallback if a user is offline. Additionally, you can see
 caching Google fonts using "fastest strategy". About cache strategies you can read on
 [sw-toolbox documentation][sw-toolbox-api].
+
+Also, I'm not using the default registration code (`includeRegistration: false`), instead, I wanted to
+have more control over registration process in order to inform users about offline capability and
+application updates. My `offline-support` initializer below.
+
+{% highlight javascript %}
+
+import Ember from "ember";
+
+const { log } = Ember.Logger;
+
+export default {
+  name: "offline-support",
+  initialize(application) {
+    const notify = application.__container__.lookup("service:notify");
+
+    if ("serviceWorker" in window.navigator) {
+      window.navigator.serviceWorker.register("/offline-support.js").then((registration) => {
+        const isUpdate = !!registration.active;
+
+        registration.onupdatefound = function () {
+          registration.installing.onstatechange = function () {
+            if (this.state === "installed") {
+              if (isUpdate) {
+                notify.info("App updated. Restart for the new version.");
+              } else {
+                notify.success("App ready for offline use.");
+              }
+            }
+          };
+        };
+      }).catch((err) => {
+        log(err);
+      });
+    }
+  },
+};
+
+{% endhighlight %}
+
+![splittypie-offline-ready](/images/blog/pwa-splittypie-offline.png "SplittyPie Offline Ready")
+![splittypie-update-app](/images/blog/pwa-splittypie-updates.png "SplittyPie Update App")
 
 ## What's next?
 
