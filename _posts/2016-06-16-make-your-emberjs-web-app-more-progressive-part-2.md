@@ -5,6 +5,7 @@ tags: ["ember", "progressive", "mobile-friendly", "offline-mode"]
 date: 2016-06-16
 author: "Tomasz Subik"
 permalink: /blog/make-your-emberjs-web-app-more-progressive-part-2-offline-caching
+image: pwa-splittypie-offline.png
 ---
 
 This is the second part of the series about making your ember app more mobile friendly,

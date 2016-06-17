@@ -4,6 +4,21 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Open-minded Software Developer who loves creating useful web and hybrid mobile apps (Ruby on Rails, Javascript, Ember.js, AngularJS, Cordova)">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@tomasz_subik">
+    <meta name="twitter:creator" content="@tomasz_subik">
+    {% if page.title %}
+    <meta name="twitter:title" content="{{ page.title }}">
+    {% else %}
+    <meta name="twitter:title" content="{{ site.title }}">
+    {% endif %}
+    {% if page.url %}
+    <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+    {% endif %}
+    <meta name="twitter:description" content="{{ page.content | strip_html | xml_escape | truncate: 200 }}">
+    {% if page.image %}
+    <meta name="twitter:image:src" content="{{ site.url }}/images/blog/{{ page.image }}">
+    {% endif %}
     <title>{{ page.title }}</title>
     <link href="/css/reset.css" rel="stylesheet" type="text/css" />
     <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
