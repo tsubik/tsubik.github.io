@@ -39,7 +39,7 @@ toolbox.router.get(/^https://api.example.com\//, apiHandler);
 
 ## Read-write data
 
-This scenario is a way complicated. You have to store new data locally then merge it and
+This scenario is a way more complicated. You have to store new data locally then merge it and
 resolve conflicts when going online. Also, this is my scenario, in plus, I have to deal
 with real-time updates from Firebase. I've done some research about helpful libraries and solutions,
 so I want to share this with you. However, I eventually come up with a custom solution
