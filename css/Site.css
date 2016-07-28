@@ -374,41 +374,66 @@ hr.blog-posts-separator {
 
 /* CV  */
 
-div#cv {}
+#cv-personal-details {
+  float: right;
+  font-size: 12px;
+  line-height: 1.5em;
+  text-align: right;
+}
 
-div#cv div.cv-section {
+#cv {
+  line-height: 1.5em;
+}
+
+#cv div.cv-section {
   clear: both;
   margin-bottom: 20px;
   overflow: hidden;
 }
 
-div#cv div.cv-section .title h1 {
-  font-size: 24px;
-}
-
-div#cv div.cv-section .content .label {
-  width: 200px;
-  float: left;
-  clear: left;
-}
-
-div#cv div.cv-section .content .text {
-  float: left;
-  width: 700px;
-}
-
-h1.cv-position {
-  font-size: 20px;
+#cv a {
   color: #4A91AC;
 }
 
-span.cv-company {
-  font-size: 14px;
+#cv > header {
+  overflow: hidden;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
-div.cv-skill {
+.cv-position {
+  margin-bottom: 5px;
+}
+
+.cv-position .date {
+  width: 100px;
   float: left;
-  width: 310px;
+  text-align: right;
+  padding-right: 15px;
+}
+
+.cv-position .text {
+  margin-left: 100px;
+}
+
+.cv-position ul {
+  list-style: circle;
+  margin-left: 20px;
+}
+
+.cv-section > .title {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 10px;
+}
+
+h1.position {
+  font-size: 18px;
+  margin: 0px;
+  color: #4A91AC;
+}
+
+.company {
+  font-size: 12px;
 }
 
 [class^="icon-"], [class*=" icon-"] {
@@ -433,7 +458,6 @@ form span.req {
 .center {
   text-align: center;
 }
-
 
 /* Responsive web design media queries */
 
