@@ -4,7 +4,7 @@ title: "Setup ESLint for your Ember project"
 tags: ["ember", "eslint"]
 date: 2016-05-20
 author: "Tomasz Subik"
-permalink: /blog/setup-eslint-for-your-ember-project
+permalink: /blog/setup-eslint-for-your-ember-project/
 ---
 
 I haven't posted anything for months, and I want to change that soon.

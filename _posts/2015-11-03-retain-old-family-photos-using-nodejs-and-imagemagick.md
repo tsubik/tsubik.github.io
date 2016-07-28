@@ -1,10 +1,10 @@
---- 
+---
 layout: post
 title: "Retain old family photos using Node.js and ImageMagick"
 tags: ["nodejs", "javascript", "imagemagick", "bash"]
 date: 2015-11-03
 author: "Tomasz Subik"
-permalink: /blog/retain-old-family-photos-using-nodejs-and-imagemagick
+permalink: /blog/retain-old-family-photos-using-nodejs-and-imagemagick/
 ---
 
 Last weekend I decided to push forward an idea which had wrapped around my mind for a long long time. My family (I guess as almost everyone's) has a lot of photos, notes, documents, etc. A lot of memories, packed into albums, envelopes, frames or hidden somewhere between books on the bookshelf. Pictures fade or simply lose quality over time. That's why I decided to scan them, but as there are a lot of them I wanted to automate the process as much as I can.

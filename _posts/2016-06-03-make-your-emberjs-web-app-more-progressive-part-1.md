@@ -4,7 +4,7 @@ title: "Make your Ember.js web app more progressive - part 1"
 tags: ["ember", "progressive", "mobile-friendly"]
 date: 2016-06-03
 author: "Tomasz Subik"
-permalink: /blog/make-your-emberjs-web-app-more-progressive-part-1
+permalink: /blog/make-your-emberjs-web-app-more-progressive-part-1/
 ---
 
 Anyone who follows the latest trends in front-end technologies probably came across the term

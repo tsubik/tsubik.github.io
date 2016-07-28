@@ -4,7 +4,7 @@ title: "Emacs for a Sublime Text user"
 tags: ["emacs", "sublime", "texteditor"]
 date: 2016-01-04
 author: "Tomasz Subik"
-permalink: /blog/emacs-for-a-sublime-text-user
+permalink: /blog/emacs-for-a-sublime-text-user/
 ---
 
 A few weeks ago I decided to switch most of my development work to Emacs. Let me say it upfront, I don’t want to take a part in any "holy war" around which text editor is best or whatever. I just want to share my experience here, how did that switch look like from the standpoint of 'typical’ Sublime Text user.

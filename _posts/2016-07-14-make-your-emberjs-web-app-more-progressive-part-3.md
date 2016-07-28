@@ -4,7 +4,7 @@ title: "Make your Ember.js web app more progressive - part 3: Offline data"
 tags: ["ember", "progressive", "mobile-friendly", "offline-mode", "offline-data"]
 date: 2016-07-14
 author: "Tomasz Subik"
-permalink: /blog/make-your-emberjs-web-app-more-progressive-part-3-offline-data
+permalink: /blog/make-your-emberjs-web-app-more-progressive-part-3-offline-data/
 image: splittypie-data-sync.png
 ---
 
