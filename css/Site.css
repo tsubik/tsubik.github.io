@@ -374,6 +374,21 @@ hr.blog-posts-separator {
 
 /* CV  */
 
+#cv-personal-name {
+  font-family: "Segoe UI Light", Verdana, Helvetica, Sans-Serif;
+  float: left;
+}
+
+#cv-personal-name .name {
+  float: right;
+  line-height: 1.1em;
+  margin-top: 10px;
+}
+
+#cv-personal-name img {
+  margin-right: 10px;
+}
+
 #cv-personal-details {
   float: right;
   font-size: 12px;
