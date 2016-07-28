@@ -4,7 +4,7 @@ title: "Keep your files in VS project included. Fast and elegant solution"
 tags: ["Powershell Cmdlet",".NET","Visual Studio"]
 date: 2012-09-22
 author: "Tomasz Subik"
-permalink: /blog/keep-your-files-in-vs-project-included-fast-and-elegant-solution/
+permalink: /blog/keep-your-files-in-vs-project-included-fast-and-elegant-solution
 ---
 
 In the previous article I wrote a [simple powershell script](/blog/powershell-script-to-bring-your-publish-to-the-next-level/)

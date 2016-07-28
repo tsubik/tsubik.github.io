@@ -4,7 +4,7 @@ title: "Powershell script to bring your publish to the next level"
 tags: ["Powershell",".NET"]
 date: 2012-08-26
 author: "Tomasz Subik"
-permalink: /blog/powershell-script-to-bring-your-publish-to-the-next-level/
+permalink: /blog/powershell-script-to-bring-your-publish-to-the-next-level
 ---
 
 How many times during the development stage did your project file break after merge? Everything looks great until you deploy

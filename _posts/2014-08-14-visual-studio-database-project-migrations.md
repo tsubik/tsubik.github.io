@@ -4,7 +4,7 @@ title: "Visual Studio database project migrations"
 tags: [".NET","Visual Studio","Database", "Migrations"]
 date: 2014-08-14
 author: "Tomasz Subik"
-permalink: /blog/visual-studio-database-project-migrations/
+permalink: /blog/visual-studio-database-project-migrations
 ---
 
 Visual Studio Database project is a good way to quickly get your database under source control. You will find it very useful especially if your system has a large database schema with a huge pile of stored procedures, functions, views or other database centric stuff. Unfortunately, the deployment strategy brought with it is painful and detached from reality. Automated migration of production database to the latest version is hmmm.... I won't say impossible. I read about it, but it was like fixing sinking submarine using bare hands. Some people use [roundhouse](https://github.com/chucknorris/roundhouse) which is a very nice project to manage database migrations using differential scripts. Below you will find pros/cons of using both of these tools.

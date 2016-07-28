@@ -4,7 +4,7 @@ title: "Generate migrations for DB projects - automate Visual Studio with powers
 tags: ["Powershell Cmdlet",".NET","Visual Studio","Database"]
 date: 2014-06-14
 author: "Tomasz Subik"
-permalink: /blog/generate-migrations-for-db-projects-automate-visual-studio-with-powershell/
+permalink: /blog/generate-migrations-for-db-projects-automate-visual-studio-with-powershell
 ---
 
 Recently I was working on providing database migrations solution for a quite large

@@ -4,7 +4,7 @@ title: "Ionic geofence example application"
 tags: ["Ionic","angularjs","javascript", "mobile"]
 date: 2014-09-17
 author: "Tomasz Subik"
-permalink: /blog/ionic-geofence-example-application/
+permalink: /blog/ionic-geofence-example-application
 ---
 
 For some month or two I left the .NET world and spent more time exploring new horizons, especially mobile development stuff. I had an idea of mobile application and now have time to make it come true. After initial research I decided to build a hybrid application which means the whole thing runs inside WebView component on the device. That approach allows me to use javascript with [angularjs](https://angularjs.org/). The last thing I needed was some CSS/JS framework to manage visual layer and friend of my came with help suggesting to look at [ionic](http://ionicframework.com/).

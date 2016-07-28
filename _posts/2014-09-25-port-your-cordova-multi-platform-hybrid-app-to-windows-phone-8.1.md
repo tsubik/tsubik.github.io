@@ -4,7 +4,7 @@ title: "Port your cordova multi-platform hybrid app to Windows Phone 8.1"
 tags: ["cordova","phonegap","ionic", "windows phone"]
 date: 2014-09-27
 author: "Tomasz Subik"
-permalink: /blog/port-your-cordova-multi-platform-hybrid-app-to-windows-phone-8.1/
+permalink: /blog/port-your-cordova-multi-platform-hybrid-app-to-windows-phone-8.1
 ---
 
 Apache Cordova team announced official support for Windows Phone 8.1 platform in

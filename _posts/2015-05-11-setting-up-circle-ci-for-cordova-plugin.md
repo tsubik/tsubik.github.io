@@ -4,7 +4,7 @@ title: "Setting up Circle CI for Cordova plugin"
 tags: ["cordova","circle-ci", "continuous integration", "testing"]
 date: 2015-05-11
 author: "Tomasz Subik"
-permalink: /blog/setting-up-circle-ci-for-cordova-plugin/
+permalink: /blog/setting-up-circle-ci-for-cordova-plugin
 ---
 
 Recently, I have been struggling with setting up some continuous development servers for my

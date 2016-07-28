@@ -4,7 +4,7 @@ title: "New personal website released"
 tags: ["Me","Design"]
 date: 2012-08-23
 author: "Tomasz Subik"
-permalink: /blog/new-personal-website-released/
+permalink: /blog/new-personal-website-released
 ---
 
 Finally, I've found some time to refresh my personal website. Nothing has changed here for years
