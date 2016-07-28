@@ -4,7 +4,7 @@ title: "Simple jQueryUI DialogManager"
 tags: ["javascript","jQuery"]
 date: 2012-10-07
 author: "Tomasz Subik"
-permalink: /blog/simple-jqueryui-dialogmanager
+permalink: /blog/simple-jqueryui-dialogmanager/
 ---
 
 Recently I've been working on structuring and refactoring javascript code in a middle size application.

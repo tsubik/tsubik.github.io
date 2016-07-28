@@ -4,7 +4,7 @@ title: "Sass with ASP.NET MVC 4 - Twitter Bootstrap example"
 tags: ["twitter","aspnet","sass","mvc"]
 date: 2013-01-05
 author: "Tomasz Subik"
-permalink: /blog/sass-with-aspnet-mvc4-twitter-bootstrap-example
+permalink: /blog/sass-with-aspnet-mvc4-twitter-bootstrap-example/
 ---
 
 Many times if I look at css stylesheets of middle and big systems it just makes me cry.
