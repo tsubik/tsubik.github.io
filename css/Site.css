@@ -49,6 +49,14 @@ a.nounderline {
   text-align: center;
 }
 
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
 /* header with navigation */
 
 #container > header {
@@ -60,11 +68,6 @@ a.nounderline {
 section#sectionMyName a {
   font-weight: bold;
   color: #000;
-}
-
-section#sectionMyName {
-  font-family: "Segoe UI Light", Verdana, Helvetica, Sans-Serif;
-  float: left;
 }
 
 section#sectionMyName .name {
@@ -118,7 +121,6 @@ footer {
   text-align: center;
 }
 
-
 /* Home site */
 
 .index-page section {
@@ -132,22 +134,13 @@ footer {
   position: relative;
 }
 
-#infoPhoto {
-  width: 200px;
-  float: left;
-}
-
-#infoContent p {
-  margin-bottom: 10px;
-}
-
-#infoContent a {
-  color: #A00;
-}
-
 .section-header {
   padding: 20px 0px;
   text-align: center;
+}
+
+#infoContent a {
+    color:
 }
 
 /* Testimonials */
@@ -313,65 +306,6 @@ hr.blog-posts-separator {
   font-size: 12px;
 }
 
-
-/* Project list */
-
-.projects-small article {
-  overflow: hidden;
-  clear: right;
-  margin-bottom: 15px;
-  background: #F2F2F2;
-  padding: 0px 10px 10px 10px;
-}
-
-.projects-small article header {
-  margin-bottom: 15px;
-  margin-left: -10px;
-  margin-top: 0px;
-}
-
-.projects-small article header h1 {
-  font-size: 24px;
-  padding: 10px;
-  display: inline-block;
-  color: #fff;
-  background: #68217A;
-}
-
-.projects-small article .project-small-image {
-  width: 210px;
-  float: left;
-}
-
-.projects-small article a {
-  font-family: "Open Sans", Verdana, Helvetica, Sans-Serif;
-  color: #A00;
-}
-
-.project-small-content-wrap {
-  float: right;
-  width: 100%;
-  margin-left: -220px;
-}
-
-.projects-small article .project-small-content {
-  margin-left: 220px;
-}
-
-.projects-small article .project-small-content p, .projects-small article .project-small-content ol {
-  margin-bottom: 10px;
-}
-
-.projects-small article .project-small-content ol {
-  padding-left: 20px;
-}
-
-.projects-small article .project-small-readmore {
-  margin-top: 5px;
-  text-align: right;
-}
-
-
 /* CV  */
 
 #cv-personal-name {
@@ -450,12 +384,13 @@ h1.position {
   font-size: 12px;
 }
 
-[class^="icon-"], [class*=" icon-"] {
-                    display: inline-block;
-                    line-height: 16px;
-                    width: 16px;
-                    height: 16px;
-                  }
+[class^="icon-"],
+[class*=" icon-"] {
+  display: inline-block;
+  line-height: 16px;
+  width: 16px;
+  height: 16px;
+}
 
 i.icon-square-filled {
   background: url('../images/square_filled.png');
