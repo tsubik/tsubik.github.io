@@ -158,7 +158,7 @@ strategies and [sw-precache][sw-precache] util to generate `service-worker.js` t
 
 You may think, finally some Ember stuff but I feel compelled to made above introduction.
 Anyway, as in [the first post][first-part] I will be using [SplittyPie][splittypie] application as
-an example. Until complete offline support is not finished, the working example is served [here][splittypie-offline]
+an example.
 
 ### Broccoli Service Worker
 
@@ -282,7 +282,6 @@ and synchronization.
 [sw-toolbox]: https://github.com/GoogleChrome/sw-toolbox
 [sw-precache]: https://github.com/GoogleChrome/sw-precache
 [splittypie]: https://splittypie.com
-[splittypie-offline]: https://splittypie-offline.firebaseapp.com
 [broccoli-serviceworker]: https://github.com/jkleinsc/broccoli-serviceworker
 [broccoli-serviceworker-cache-strategies]: https://github.com/jkleinsc/broccoli-serviceworker#routing-options
 [sw-toolbox-api]: https://googlechrome.github.io/sw-toolbox/docs/master/tutorial-api

@@ -242,7 +242,7 @@ showing up in the future.
 ## Conclusions
 
 That concludes this blog post. To see more related code to this topic check out
-[SplittyPie github repository][splittypie-repository] (currently [offline-support branch][splittypie-offline-support]).
+[SplittyPie github repository][splittypie-repository].
 Also, if you are more interested in offline first concept, [here is the real mine of knowledge][offline-first].
 I think the next post will be about [Web Push Notifications][push-api], not sure yet.
 Stay sync!
@@ -264,6 +264,5 @@ Stay sync!
 [localforage-adapter]: https://github.com/genkgo/ember-localforage-adapter
 [emberfire]: https://github.com/firebase/emberfire
 [splittypie-repository]: https://github.com/cowbell/splittypie
-[splittypie-offline-support]: https://github.com/cowbell/splittypie/tree/offline-support
 [offline-first]:https://github.com/pazguille/offline-first
 [push-api]: https://developer.mozilla.org/en-US/docs/Web/API/Push_API

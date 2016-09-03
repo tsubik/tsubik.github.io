@@ -31,8 +31,7 @@ I've got a working application which I've felt is a great candidate to play with
 It's called [Splittypie][splittypie] and it is an easy expense splitter. The app is written in
 Ember.js and source code is available [here][splittypie-source]. It is already mobile friendly
 to some extent, it's responsive, looks like a mobile app on mobile devices, it also has nice
-mobile friendly drawer ;). I will continuously try to add Progressive Web App
-enhancements on [offline support branch][offline-support-branch] and publish new version [here][splittypie-offline].
+mobile friendly drawer ;).
 
 ## Home screen launcher, Splash screen, fullscreen mode
 
@@ -180,8 +179,6 @@ I know, I barely scratch the surface in this post. See [the next part][the-next-
 [addy-osmani]: https://addyosmani.com
 [splittypie]: https://splittypie.com
 [splittypie-source]: https://github.com/cowbell/splittypie
-[offline-support-branch]: https://github.com/cowbell/splittypie/tree/offline-support
-[splittypie-offline]: https://splittypie-offline.firebaseapp.com
 [google-homescreen-detailed]: https://developer.chrome.com/multidevice/android/installtohomescreen
 [manifest-generator]: https://app-manifest.firebaseapp.com
 [web-app-install-banners]: https://developers.google.com/web/updates/2015/03/increasing-engagement-with-app-install-banners-in-chrome-for-android
