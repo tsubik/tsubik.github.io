@@ -1,3 +1,10 @@
+---
+---
+
+@import 'reset.css';
+@import 'bootstrap.min.css';
+@import 'pygments.css';
+
 body {
   background-color: #fff;
   font-size: 16px;
@@ -17,10 +24,6 @@ h2 {
   font-size: 20px;
   padding-bottom: 5px;
   padding-top: 5px;
-}
-
-div.clear {
-  clear: both;
 }
 
 div#container {
@@ -45,6 +48,8 @@ a.nounderline {
   text-decoration: none;
 }
 
+// helpers
+
 .text-center {
   text-align: center;
 }
@@ -57,6 +62,10 @@ a.nounderline {
   float: right;
 }
 
+.clear {
+  clear: both;
+}
+
 /* header with navigation */
 
 #container > header {
@@ -65,52 +74,53 @@ a.nounderline {
   margin-top: 40px;
 }
 
-section#sectionMyName a {
-  font-weight: bold;
-  color: #000;
-}
+section#sectionMyName {
+  a {
+    font-weight: bold;
+    color: #000;
+  }
 
-section#sectionMyName .name {
-  float: right;
-  line-height: 1.1em;
-  margin-top: 10px;
-}
+  img {
+    margin-right: 10px;
+  }
 
-section#sectionMyName .name small {
-  font-size: 12px;
-}
+  .name {
+    float: right;
+    line-height: 1.1em;
+    margin-top: 10px;
 
-section#sectionMyName img {
-  margin-right: 10px;
+    small {
+      font-size: 12px;
+    }
+  }
 }
 
 nav {
   float: right;
   margin-right: 10px;
   margin-top: 10px;
-}
 
-nav ul {
-  list-style: none;
-  padding-left: 0px;
-}
+  ul {
+    list-style: none;
+    padding-left: 0px;
 
-nav ul li {
-  float: left;
-  margin-left: 15px;
-  list-style: none;
-}
+    li {
+      float: left;
+      margin-left: 15px;
+      list-style: none;
 
-nav ul li a {
-  padding: 10px 10px 10px 10px;
-}
+      a {
+        padding: 10px 10px 10px 10px;
 
-nav ul li a:hover {
-  color: #fff;
-  background-color: #4A91AC;
-  text-decoration: none;
+        &:hover {
+          color: #fff;
+          background-color: #4A91AC;
+          text-decoration: none;
+        }
+      }
+    }
+  }
 }
-
 
 /* Copyright footer */
 
@@ -139,12 +149,14 @@ footer {
   text-align: center;
 }
 
-#infoContent a {
-  color: #A00;
-}
+#infoContent {
+  a {
+    color: #A00;
+  }
 
-#infoContent p {
-  margin: 10px 0;
+  p {
+    margin: 10px 0;
+  }
 }
 
 /* Testimonials */
@@ -174,115 +186,121 @@ hr.separator {
 
 .highlight {
   padding: 10px 0px;
-}
 
-.highlight code {
-  font-size: 12px;
+  code {
+    font-size: 12px;
+  }
 }
 
 .blog-posts {
   margin-bottom: 15px;
-}
 
-.blog-posts article {
-  clear: right;
-}
+  article {
+    clear: right;
 
-.blog-posts article header {
-  margin-bottom: 0px;
-}
+    header {
+      margin-bottom: 0px;
 
-.blog-posts article header h1 {
-  font-size: 24px;
-  color: #000;
-}
+      h1 {
+        font-size: 24px;
+        color: #000;
+      }
+    }
 
-.blog-posts article .post-content {
-  margin-top: 15px;
-}
+    .post-content {
+      margin-top: 15px;
 
-.blog-posts article .post-content h2 {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  font-size: 20px;
-}
+      h2 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 20px;
+      }
 
-.blog-posts article .post-content a {
-  font-family: "Open Sans", Verdana, Helvetica, Sans-Serif;
-  color: #A00;
-}
+      a {
+        font-family: "Open Sans", Verdana, Helvetica, Sans-Serif;
+        color: #A00;
 
-.blog-posts article .post-content a:hover {
-  text-decoration: underline;
-}
+        &:hover {
+          text-decoration: underline;
+        }
+      }
 
-.blog-posts article .post-content ol, .blog-posts article .post-content ul {
-  padding-left: 1.5em;
+      ol, ul {
+        padding-left: 1.5em;
+      }
+    }
+
+    .post-readmore {
+      margin-top: 5px;
+      text-align: right;
+
+      a {
+        padding: 7px;
+
+        &:hover {
+          color: #fff;
+          background-color: #4A91AC;
+          text-decoration: none;
+        }
+      }
+    }
+  }
 }
 
 .post-title {
   margin-bottom: 5px;
 }
 
-.post-content p {
-  padding-bottom: 7px;
-  padding-top: 7px;
-}
+.post-content {
+  p {
+    padding-bottom: 7px;
+    padding-top: 7px;
+  }
 
-.post-content ul li {
-  margin: 0.5em auto;
-  list-style: disc;
-}
+  ul {
+    li {
+      margin: 0.5em auto;
+      list-style: disc;
 
-.post-content ol li {
-  margin: 0.5em auto;
-}
+      ul li {
+        list-style: circle;
+      }
+    }
+  }
 
-.post-content ul li ul li {
-  list-style: circle;
-}
+  ol {
+    li {
+      margin: 0.5em auto;
+    }
+  }
 
-.post-content pre {
-  white-space: pre;
-}
+  pre {
+    white-space: pre;
+  }
 
-.post-content code, .post-content code.inline {
-  display: block;
-  margin: 0.3em;
-  padding: 0.2em;
-  line-height: 1.5em;
-  background: #f8f8ff;
-}
+  code {
+    display: block;
+    margin: 0.3em;
+    padding: 0.2em;
+    line-height: 1.5em;
+    background: #f8f8ff;
 
-.post-content code.inline, .post-content code.highlighter-rouge  {
-  display: inline-block;
-  margin: 0px;
-  color: #2b91af;
-}
+    &.inline, &.highlighter-rouge {
+      display: inline-block;
+      margin: 0px;
+      color: #2b91af;
+    }
+  }
 
-.post-content blockquote {
-  border-bottom: 3px double #DDD;
-  border-top: 3px double #DDD;
-  font-style: italic;
-  font-weight: 300;
-  line-height: 1.35em;
-  margin: 1.5em auto;
-  padding: 1em 1em;
-}
-
-.blog-posts article .post-readmore {
-  margin-top: 5px;
-  text-align: right;
-}
-
-.blog-posts article .post-readmore a {
-  padding: 7px;
-}
-
-.blog-posts article .post-readmore a:hover {
-  color: #fff;
-  background-color: #4A91AC;
-  text-decoration: none;
+  blockquote {
+    border-bottom: 3px double #DDD;
+    border-top: 3px double #DDD;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1.35em;
+    margin: 1.5em auto;
+    padding: 1em 1em;
+  }
 }
 
 hr.blog-posts-separator {
@@ -338,22 +356,22 @@ hr.blog-posts-separator {
 
 .cv-position {
   margin-bottom: 5px;
-}
 
-.cv-position .date {
-  width: 100px;
-  float: left;
-  text-align: right;
-  padding-right: 15px;
-}
+  .date {
+    width: 100px;
+    float: left;
+    text-align: right;
+    padding-right: 15px;
+  }
 
-.cv-position .text {
-  margin-left: 100px;
-}
+  .text {
+    margin-left: 100px;
+  }
 
-.cv-position ul {
-  list-style: circle;
-  margin-left: 20px;
+  ul {
+    list-style: circle;
+    margin-left: 20px;
+  }
 }
 
 .cv-section > .title {

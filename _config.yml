@@ -1,4 +1,5 @@
 name: tsubik
+title: Tomasz Subik - Software Engineer
 permalink: /:year/:month/:day/:title/
 exclude: ["Gemfile", "Gemfile.lock", "README.md"]
 include:
