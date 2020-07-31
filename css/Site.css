@@ -143,6 +143,10 @@ footer {
   color: #A00;
 }
 
+#infoContent p {
+  margin: 10px 0;
+}
+
 /* Testimonials */
 .testimonial {
   font-style: italic;
@@ -164,25 +168,8 @@ footer {
 
 /* Blog posts */
 
-h1#recent-blog-posts {
-  font-size: 18px;
-  margin-top: 14px;
-  display: inline-block;
-}
-
 hr.separator {
   margin-bottom: 20px;
-}
-
-a.view-all-posts {
-  margin-left: 10px;
-  padding: 5px;
-}
-
-a.view-all-posts:hover {
-  color: #fff;
-  background-color: #4A91AC;
-  text-decoration: none;
 }
 
 .highlight {

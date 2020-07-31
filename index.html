@@ -5,64 +5,17 @@ layout : main
 <div class="index-page">
   <section id="infoContent">
     <p>
-      <strong>Hello</strong>, I'm Tomasz! A <strong>Full Stack Developer</strong> with almost a decade of experience.
-      Currently working with <strong>Ruby on Rails</strong>, <strong>Node.js</strong>, <strong>Ember</strong>,
-      <strong>AngularJS</strong>, <strong>Cordova</strong>, <strong>Ionic</strong> and host of other great tools.
-      A proud member of <a href="https://cowbell-labs.com/">Cowbell Labs</a> team.
-      An Open Source projects contributor.
+      <strong>Hello</strong>, I'm Tomasz! <strong>Software Engineer</strong> working remotly for almost a decade.<br/>
+      I gained my experience helping companies all around the world, crafting various apps, web and mobile, wearing many hats, working on backend and frontend.
+      To know more, please take a look at my <a href="/cv">CV here.</a>
     </p>
     <p>
-      When not working, I play <strong>ice hockey</strong>, rollerblade over the city, fly drones, learn and simply enjoy life.
+      Latest tech stack: Ruby on Rails, React, Node.js, can adjust quickly to any tool your company uses.
     </p>
     <p>
-      You can mail me at <a href="mailto:tsubik@gmail.com">tsubik@gmail.com</a> or use <a href="/contact.html">the contact form</a> to write me a message.
-    </p>
-    <p>
+      You can mail me at <a href="mailto:tsubik@gmail.com">tsubik@gmail.com</a> or use <a href="/contact">the contact form</a> to write me a message. <br>
       You can check my activity on <a href="https://github.com/tsubik">Github</a>.
     </p>
-    <p>
-      You can follow me on <a href="https://twitter.com/tomasz_subik">Twitter</a>.
-    </p>
-    <p>
-      I share photos on <a href="https://www.instagram.com/tomasz_subik/">Instagram</a> as well.
-    </p>
-  </section>
-
-  <section class="blog-posts">
-    <div class="section-header">
-      <img src="images/pen.png" alt="Below some of my latest posts"/>
-    </div>
-
-    {% for post in site.posts limit:2 %}
-    <article>
-      <header class="post-header text-center">
-        <a href="{{post.url}}">
-          <h1 class="post-title">
-            {{post.title}}
-          </h1>
-        </a>
-        <p>
-          <time datetime="{{post.date}}">{{post.date | date: "%B %d, %Y"}}</time>
-        </p>
-      </header>
-      <div class="post-content">
-        {{post.content | split:"<!--more-->" | first}}
-      </div>
-      <div class="post-readmore">
-        <a href="{{post.url}}">Read more...</a>
-      </div>
-    </article>
-    {% endfor %}
-
-    <article>
-      <header class="post-header text-center">
-        <a href="/blog/">
-          <h1 class="post-title">
-            Check out all of my posts...
-          </h1>
-        </a>
-      </header>
-    </article>
   </section>
 
   <section class="testimonials">
