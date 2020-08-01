@@ -1,0 +1,84 @@
+---
+---
+
+#cv-personal-name {
+  font-family: "Segoe UI Light", Verdana, Helvetica, Sans-Serif;
+  float: left;
+}
+
+#cv-personal-name .name {
+  float: right;
+  line-height: 1.1em;
+  margin-top: 10px;
+}
+
+#cv-personal-name img {
+  margin-right: 10px;
+}
+
+#cv-personal-details {
+  float: right;
+  font-size: 12px;
+  line-height: 1.5em;
+  text-align: right;
+}
+
+#cv {
+  line-height: 1.5em;
+}
+
+#cv div.cv-section {
+  clear: both;
+  overflow: hidden;
+}
+
+#cv a {
+  color: #4A91AC;
+}
+
+#cv > header {
+  overflow: hidden;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.cv-position {
+  margin-bottom: 5px;
+
+  .date {
+    width: 100px;
+    float: left;
+    text-align: right;
+    padding-right: 15px;
+  }
+
+  .text {
+    margin-left: 100px;
+  }
+
+  ul {
+    list-style: circle;
+    margin-left: 20px;
+  }
+
+  @media print {
+    a::after{
+      content: " (" attr(href) ") ";
+    }
+  }
+}
+
+.cv-section > .title {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 10px;
+}
+
+h1.position {
+  font-size: 18px;
+  margin: 0px;
+  color: #4A91AC;
+}
+
+.company {
+  font-size: 12px;
+}

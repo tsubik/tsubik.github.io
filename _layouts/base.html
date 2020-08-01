@@ -25,8 +25,10 @@
     <meta name="twitter:image:src" content="https://tsubik.com/images/blog/{{ page.image }}">
     {% endif %}
     <link rel="icon" type="image/png" href="/images/hockey.png"/>
-
     <link rel="stylesheet" href="{{ "/css/site.css" | prepend: site.baseurl }}">
+    {% if page.style %}
+    <link rel="stylesheet" href="{{ "/css/" | append: page.style | append: ".css" | prepend: site.baseurl }}">
+    {% endif %}
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600" rel="stylesheet" type="text/css">
   </head>
   <body>

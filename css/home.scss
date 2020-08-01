@@ -1,0 +1,47 @@
+---
+---
+
+.index-page section {
+  margin-bottom: 30px;
+}
+
+#two-column-wrap {
+  overflow: hidden;
+  float: left;
+  width: 100%;
+  position: relative;
+}
+
+.section-header {
+  padding: 20px 0px;
+  text-align: center;
+}
+
+#infoContent {
+  a {
+    color: #A00;
+  }
+
+  p {
+    margin: 10px 0;
+  }
+}
+
+/* Testimonials */
+.testimonial {
+  font-style: italic;
+  margin-bottom: 20px;
+  padding: 20px 0px;
+}
+
+.testimonial-content {
+  margin-bottom: 10px;
+}
+
+.testimonial-author {
+  text-align: right;
+}
+
+.testimonial-author img {
+  margin-left: 15px;
+}
