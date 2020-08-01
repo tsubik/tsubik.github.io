@@ -372,6 +372,12 @@ hr.blog-posts-separator {
     list-style: circle;
     margin-left: 20px;
   }
+
+  @media print {
+    a::after{
+      content: " (" attr(href) ") ";
+    }
+  }
 }
 
 .cv-section > .title {
