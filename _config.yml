@@ -1,6 +1,8 @@
 name: tsubik
 title: Tomasz Subik - Software Engineer
 permalink: /:year/:month/:day/:title/
+sass:
+  style: compressed
 exclude: ["Gemfile", "Gemfile.lock", "README.md"]
 include:
 - .nojekyll

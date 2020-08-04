@@ -1,9 +1,9 @@
 ---
 ---
 
-@import 'reset.css';
-@import 'bootstrap.min.css';
-@import 'pygments.css';
+@import 'reset';
+@import 'bootstrap';
+@import 'pygments';
 
 body {
   background-color: #fff;
@@ -98,7 +98,7 @@ section#sectionMyName {
 nav {
   float: right;
   margin-right: 10px;
-  margin-top: 10px;
+  margin-top: 15px;
 
   ul {
     list-style: none;

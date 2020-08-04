@@ -25,25 +25,42 @@
 
 #cv {
   line-height: 1.5em;
-}
-
-#cv div.cv-section {
-  clear: both;
-  overflow: hidden;
-}
-
-#cv a {
-  color: #4A91AC;
-}
-
-#cv > header {
-  overflow: hidden;
-  margin-top: 40px;
   margin-bottom: 40px;
+
+  > header {
+    overflow: hidden;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  a {
+    color: #4A91AC;
+  }
+
+  .cv-section {
+    clear: both;
+    overflow: hidden;
+    margin-bottom: 10px;
+
+    > .title {
+      border-bottom: 1px solid #e5e5e5;
+      margin-bottom: 10px;
+    }
+  }
+
+  h1.position {
+    font-size: 18px;
+    margin: 0px;
+    color: #4A91AC;
+  }
+
+  .company {
+    font-size: 12px;
+  }
 }
 
 .cv-position {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 
   .date {
     width: 100px;
@@ -66,19 +83,4 @@
       content: " (" attr(href) ") ";
     }
   }
-}
-
-.cv-section > .title {
-  border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 10px;
-}
-
-h1.position {
-  font-size: 18px;
-  margin: 0px;
-  color: #4A91AC;
-}
-
-.company {
-  font-size: 12px;
 }
