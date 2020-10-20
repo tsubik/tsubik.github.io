@@ -7,31 +7,29 @@ author: "Tomasz Subik"
 permalink: /blog/powershell-script-to-bring-your-publish-to-the-next-level/
 ---
 
-How many times during the development stage did your project file break after merge? Everything looks great until you deploy
-app on test or production server(sic!). You finish your work, go home and spend
-nice evening with your girlfriend or friends. But next day, during checking new
-issues from quality team, you might see something like that:
+How many times during the development stage, your project file breaks after the merge? Everything looks great until you deploy
+the app to test or production server(sic!). You finish your work, go home to spend a great evening with your girlfriend or friends, but the next day, while checking issues reported by the quality team, you might see something like this:
 
 ![Powershell_01](/images/blog/powershell_01.png "View not found")
 <!--more-->
 
-Or complaints why everything looks like shit!
+Or complaints of this kind: Why everything looks like shit!!??
 
-What the hell?! That supposed to work perfectly fine! You go to Visual Studio looking for problematic files and baam! Found it!!
+What the hell!? That supposed to work perfectly fine! You go straight to Visual Studio looking for problematic files and baam! Found it!!
 
 ![Powershell_02](/images/blog/powershell_02.png "Solution Explorer")
 
-Your view is not added to the project. It is that simple and silly. It can be any file - view,
-stylesheet, script file and a bunch of others.
+Your view is there but not added to the project. It is that simple and silly. It can be any file - view,
+stylesheet, script file, and a bunch of others.
 
 So, we need a simple solution to prevent it from happening again.
 
-Problem is trivial and solution is so. All you have to do is check if all files listed in project
-catalog are included in project configuration file. You can write simple console app to
-check it and warn you about files you might miss.
+The problem is trivial and the solution is so too. All you have to do is check if all files listed in the project's
+catalog are included in the project configuration file. You can write a simple console app to
+check it and warn you about files you might be missing.
 
-But instead, I've prepared a powershell script. This is my first powershell script so any improvements
-are mostly welcome (please do it directly on <a href="https://gist.github.com/3296391">gist</a>).
+But instead, I've prepared a PowerShell script. This is my first PowerShell script so be nice, and any improvements
+are very welcome (please do it directly on <a href="https://gist.github.com/3296391">gist</a>).
 
 <noscript><pre>
 #Author: Tomasz Subik http://tsubik.com
@@ -116,15 +114,12 @@ Write-Host '######## Checking for missing references to files ends #############
 </pre></noscript>
 <script src="https://gist.github.com/3296391.js?file=FindProjectMissingFilesReferences.ps1"> </script>
 
-Script is on <a href="https://gist.github.com/3296391">github</a> so you can download it,
-fork it just do what you want to with it.
+You can find script on <a href="https://gist.github.com/3296391">github</a>.
 
-How you can use it with your current projects?
+How can you use it in your current projects?
 
-Simple just add script somewhere to your project and I thought using VS package manager
-console will be most proper way to use it nicely.
-
-Just run script directly in PM Console with solution directory as a parameter.
+Just add the script somewhere to your project and use VS package manager
+console tool.
 
 <noscript>
 <pre>

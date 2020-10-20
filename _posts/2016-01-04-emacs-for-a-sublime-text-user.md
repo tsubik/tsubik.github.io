@@ -7,11 +7,11 @@ author: "Tomasz Subik"
 permalink: /blog/emacs-for-a-sublime-text-user/
 ---
 
-A few weeks ago I decided to switch most of my development work to Emacs. Let me say it upfront, I don’t want to take a part in any "holy war" around which text editor is best or whatever. I just want to share my experience here, how did that switch look like from the standpoint of 'typical’ Sublime Text user.
+A few weeks ago I decided to switch most of my development work to Emacs. Let me say it upfront, I don’t want to take a part in any "holy war" around which text editor is best or whatever. I just want to share my experience here, how did that switch look like from the standpoint of a 'typical’ Sublime Text user.
 
 <!--more-->
 
-I still think that Sublime Text is a magnificent piece of software, it’s beautiful, it’s pretty damn fast, well-configured out of the box, and so on. So you may ask me: Why did you decide to make a switch? To cut a long story short, I just wanted to try something else, something a way different that will broaden my perspective. Maybe I will return to Sublime in about month or two, who knows. I have no intentions to make "why to switch" and "why Emacs" the main topic of this entry and my only goal is to pinpoint what I have missed from Sublime after few weeks of using Emacs and what can I do about it.
+I still think that Sublime Text is a magnificent piece of software, it’s beautiful, it’s pretty damn fast, well-configured out of the box, and so on. So you may ask me: Why did you decide to make a switch? To cut a long story short, I just wanted to try something else, something way different that will broaden my perspective. Maybe I will return to Sublime in about a month or two, who knows. I have no intentions to make "why to switch" and "why Emacs" the main topic of this entry and my only goal is to pinpoint what I have missed from Sublime after few weeks of using Emacs and what can I do about it.
 
 > Update [24.05.2016]: I've finally set up with [Emacs prelude][emacs-prelude]. After few months of using it,
 I could highly recommend it for anyone whether you are a newbie or more experienced Emacs user. Emacs prelude comes with many great packages and features configured out of the box. What's more, it is easy to customize. Here is the [repo][emacs-prelude-config]
@@ -56,7 +56,7 @@ Quick directory tree when I can look at my project structure or swiftly manipula
 
 ## Project scope
 
-There is no such thing like "Open Project" (or directory) in Emacs but I really like to have some functionalities working in project scope like: opening files, searching in files, project directory tree. [Projectile][projectile] package is a salvage here. The list of features is enormous, but the most important for me are like:
+There is no such thing as "Open Project" (or directory) in Emacs but I really like to have some functionalities working in project scope like: opening files, searching in files, project directory tree. [Projectile][projectile] package is a salvage here. The list of features is enormous, but the most important for me are like:
 
 * switching projects
 * integration with neotree (switching project causes changing root in neotree, great:)

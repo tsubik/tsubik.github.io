@@ -8,10 +8,10 @@ permalink: /blog/make-your-emberjs-web-app-more-progressive-part-3-offline-data/
 image: splittypie-data-sync.png
 ---
 
-There are times when you have a limited access to the network, whether you are on a trip around the
+There are times when you have limited access to the network, whether you are on a trip around the
 world not willing to spend lavishly on roaming services, or on a train with internet connection
-breaking all the time. This is the third part of the series how to make your application accessible
-in those moments. The previous part was about caching application assets, so you don't need a network
+breaking all the time. This is the third part of the series on how to make your application accessible
+in those moments. The previous part was about caching application assets, so you don't need network
 access to run an application consecutive time. Today, another important aspect, so without further ado,
 please enjoy, guide how to keep your data offline.
 
@@ -24,11 +24,11 @@ terms of offline data. Every application is different hence there is no single s
 
 I think this scenario is fairly easy. All you need to do is to cache your data and come up with some
 invalidation mechanism. There is [a clone of hacker news][react-hn], capable of working without
-the internet connection and [showed recently by Addy Osmani on Google IO conference][addy-osmani-talk].
+the internet connection and [showed recently by Addy Osmani at Google IO conference][addy-osmani-talk].
 They are using firebase so it's not the simplest case as you have to deal with real-time
 updates as well. Although, in a simpler scenario if you have a REST API you could just cache
 your requests as any other assets using service worker as I described in the previous
-part of this series. For example using [sw-toolbox][sw-toolbox].
+part of this series. For example, using [sw-toolbox][sw-toolbox].
 
 {% highlight javascript %}
 
@@ -39,28 +39,28 @@ toolbox.router.get(/^https://api.example.com\//, apiHandler);
 
 ## Read-write data
 
-This scenario is a way more complicated. You have to store new data locally then merge it and
+This scenario is way more complicated. You have to store new data locally then merge it and
 resolve conflicts when going online. Also, this is my scenario, in plus, I have to deal
 with real-time updates from Firebase. I've done some research about helpful libraries and solutions,
 so I want to share this with you. However, I eventually come up with a custom solution
-which is inspired by what I found.
+that is inspired by what I found.
 
 ### General ways to sync data
 
 I don't know exactly how many ways of data syncing are there, but lets look at two of them.
 
-1. First way is just saving data offline and then merging the whole dataset or some part of it with the
-online database. This approach needs to use some indicator like `modifiedAt` date for the conflict resolution.
+1. The first way is just saving data offline and then merging the whole dataset or some part of it with the
+online database. This approach needs to use an indicator like `modifiedAt` date for the conflict resolution.
 Mind that you cannot just destroy a record, remove it completely, but instead set a `deleted` flag.
-2. Another one doesn't need any `modifiedAt` date indicator or `deleted` flag. You store to the
+2. Another one doesn't need any `modifiedAt` date indicator or `deleted` flag. You will store to the
 offline store as well but also preserve a queue of operations to be performed on the online store.
 If you are online you can execute them immediately, if not just save them to the local store.
 
-Personally, I chose the second one, but before I present my solution lets go through some existing libraries out there.
+Personally, I chose the second one, but before I present my solution let's go through some existing libraries out there.
 
 ### PouchDB-CouchDB
 
-This looks like the quickest way to create an offline app. On the client side you store data
+This looks like the quickest way to create an offline app. On the client-side, you store data
 in local [pouchDB][pouchDB] instance and then sync changes with CouchDB server using internal replication
 and [conflict resolution][couchDB-conflict] algorithm. There is a great Ember.js open source project out
 there using this method called [HospitalRun][hospitalrun] and
@@ -79,8 +79,8 @@ it is not documented well. Here is a short description from their readme.
 ### [Ember-sync][ember-sync], [ember-fryctoria][ember-fryctoria], [ember-data-offline][ember-data-offline]
 
 Unfortunately, those libraries are not compatible with the newest Ember Data version.
-But you can tease out some good ideas from them and I recommend to check them out.
-All of them are using deferred jobs which have to be run on online store approach.
+But you can tease out some good ideas from them and I recommend checking them out.
+All of them are using deferred jobs that have to be run on an online store approach.
 In my application, I'm using some not standard ways to store data like embedded records
 and adapters like emberfire. My schema is not very complicated, just a few models,
 that's why I thought the quickest way would be to implement synchronization from scratch.
@@ -173,7 +173,7 @@ save(event) {
 {% endhighlight %}
 
 Ok. so when to synchronize. It's totally up to you, but it's better not to be out of sync for too long.
-As I'm using firebase on my server side then on any real-time value change I'm synchronizing
+As I'm using firebase on my server-side then on any real-time value change I'm synchronizing
 that change into my offline store. Another time is when the user was offline and goes online.
 I'm using navigator event to obtain that. Here is a quick `connection` service for observing that.
 
@@ -235,7 +235,7 @@ syncOnline() {
 
 ### Conflict resolution
 
-In my case, the offline version always wins the conflict as I'm loading online store at first place and then
+In my case, the offline version always wins the conflict as I'm loading the online store in the first place and then
 executing stored commands in strict order on this store. I realize there might be some edge cases
 showing up in the future.
 

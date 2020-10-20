@@ -7,51 +7,52 @@ author: "Tomasz Subik"
 permalink: /blog/sass-with-aspnet-mvc4-twitter-bootstrap-example/
 ---
 
-Many times if I look at css stylesheets of middle and big systems it just makes me cry.
-Total chaos, code repetition, basically too much css. That's why css preprocessors were invented.
-In the .NET world the most popular right now is Less. However, for a long time there is another
+Many times if I look at css stylesheets of middle and big systems I tend to work with they just make me cry.
+Total chaos, code repetition, basically too much CSS. That's why CSS preprocessors were invented.
+In the .NET world, the most popular right now is Less. However, for a long time, there is another
 player on the market - [Sass][Sass]. <!--more-->And that is what this post will be about - Sass
-along with asp.net (no matter mvc or not). If anyone doesn't know what Sass is, [check it out][Sass].
-In a nutshell it is CSS preprocessor giving you much more power to create your stylesheets
+along with ASP.NET (no matter MVC or Web Forms). If anyone doesn't know what Sass is, [check it out][Sass].
+In a nutshell, it is CSS preprocessor giving you much more power to create your stylesheets
 (nesting, mixing, variables, etc.). Blablabla... anyway in many comparisons to less, sass is the winner,
 but you will choose whichever you like more.
-There are some posts over the Internet describing how to use Sass with asp.net,
-but I want to show you how I'm using it and what I am avoiding.
+There are some posts over the Internet describing how to use Sass with ASP.NET,
+but I want to show you how I'm using it and what I am trying to avoid.
 
 ## Pre-requirements
 
-Simple list what do we need to start playing around Sass:
+Here is a simple list of what we need to start playing around with Sass:
 
 - Sass preprocessor engine
 - VS syntax highlight
-- something for debugging in the browser
+- browser debug tool
 
 What I am using:
 
-- [Compass][Compass] which using Sass as a preprocessor. You need to [install ruby][Ruby_For_Windows]
-environment and then simple using your favorite console shell
+- [Compass][Compass] which is using Sass as a preprocessor. You need to [install ruby][Ruby_For_Windows]
+environment and then simply use your favorite console shell
 <code>gem install compass</code>
 - For syntax highlighting I am using [Web Essentials][Web_Essentials] - I highly recommend this extension.
 Sass support is a new feature there and soon will be much better.
 - For development, debugging - Chrome development tools (for firefox users - [FireSass][FireSass])
 
-Ok. So what I am avoiding:
+What I am avoiding:
 
-- Mindscape Web Workbench. Why??
+Mindscape Web Workbench. Why??
+
 - It's too heavy
 - "Go Pro" everywhere. I'm sick of it. Want to comment a line in your .scss file using VS's
 shortcut ("commenting is only in pro version" WTF? Are you kidding me?)
 - It using compass so.. do not rely on some commercial tools, when it is soo simple to use what they are using.
 - That's it
 
-I recommend installing stuff I am using, but if you do not want install ruby and compass
-manually and you are "console hater" you can start with Web Workbench
+I recommend installing stuff I am using, but if you do not want to install ruby and compass
+manually and you are a classic *console hater* then you can start with Web Workbench
 (it is using compass so ruby will be installed anyway).
 
 ## Let's rock - basic app
 
 You have everything set up, so let's play.
-We don't want to build solution from scratch that's why we will use twitter bootstrap nuget package.
+We don't want to build a solution from scratch that's why we will use twitter bootstrap nuget package.
 
 First steps.
 
@@ -64,32 +65,32 @@ First steps.
 </pre></noscript>
 <script src="https://gist.github.com/4457378.js?file=install_packages"> </script>
 
-That's it. Fire up application and see what we got so far.
+That's it. Run your application and see what you got so far.
 
 ![ASP.NET MVC 4 with Twitter Bootstrap and Sass](/images/blog/twitter_sass1.png "ASP.NET MVC 4 with Twitter Bootstrap and Sass")
 
-Now our application is using standard css stylesheets. Our goal is to replace them with a Sass files.
+Now, our application is using standard css stylesheets. Our goal is to replace them with Sass files.
 
 ## Sass goodness
 
 I found out a nice [port from Less to Sass bootstrap][sass_twitter_bootstrap]. Nice job guys! Sure we gonna use it.
 
-If you have git, simple clone the repo, if you don't... [install git][Git_For_Windows] :].
-Fine, if you don't, just download zipped repo.
+If you have git, simply clone the repo, if you don't... [install git][Git_For_Windows] :].
+Fine, if you don't, just download the zipped repo.
 
 Next steps.
 
-1. Delete all css files in Content folder.
+1. Delete all CSS files in Content folder.
 2. Create Content\Sass\Twitter directory and copy there all files from lib directory of cloned sass twitter port.
-3. Initialize compass project. Open console in root folder of web application.
+3. Initialize compass project. Open console in the root folder of web application.
 <code>
   compass init
 </code>
 That will set up default compass project configuration. We need to change it a little bit.
 So now:
 
-1. Delete sass and stylesheet folder created in root path.
-2. Edit config.rb file
+1. Delete sass and stylesheet folder created in the root path.
+2. Edit config.rb file.
 
 <noscript><pre>
   # Set this to the root of your project when deployed:
@@ -109,11 +110,11 @@ So now:
 </pre></noscript>
 <script src="https://gist.github.com/4457378.js?file=application_v1.scss"> </script>
 
-So we are using one of compass built-in stylesheet (reset), main twitter bootstrap and reponsive stylesheet.
+We are now using one of compass built-in stylesheet (reset), main twitter bootstrap and reponsive stylesheet.
 
-Let's compile ours stylesheets
+Let's compile our stylesheets
 <code>compass compile</code>
-Now in Content directory we have all needed stylesheets.
+Now, in Content directory we have all the needed stylesheets.
 
 Update application layouts to use application.css from Content directory.
 
@@ -214,25 +215,25 @@ body
 </pre></noscript>
 <script src="https://gist.github.com/4457378.js?file=application_v2.scss"> </script>
 
-It will change a little design, but... so what. In this little example I show you usage of variables, mixins and nestings.
+It will change design a little, but... so what. In this example, I want to show you the usage of variables, mixins and nestings.
 
-I don't want to create sass tutorial here, just do what you want, experiment.
+I don't want to create a sass tutorial here, so please just do what you want, do not hesitate to experiment.
 
 ## Debugging sass
 
-There is something that everyone hates in every code generating languages like coffeescript,
+There is something that everyone hates in every code generating language like coffeescript,
 typescript, less and sass - troubles with debugging. Browser shows you some errors in
 specific line of code which have nothing to do with your original development files.
 
 You can find some solutions to this problem.
 
-For chrome browser (24+) there is for now an experiment sass support feature.
+For chrome browser (24+) there is an experiment sass support feature.
 Obtain how to use it - [http://benfrain.com/add-sass-compass-debug-info-for-chrome-web-developer-tools/][Chrome_Sass]
 
 For firefox you have [FireSass extension][FireSass]. You will find instructions
 on how to use it on [http://nex-3.com/posts/92-firesass-bridges-the-gap-between-sass-and-firebug][Firefox_Sass]
 
-This solutions requires adding two config lines to config.rb file
+This solution requires adding two config lines to config.rb file
 <noscript><pre>
   sass_options = {:debug_info => true}
   output_style = :expanded
@@ -241,13 +242,13 @@ This solutions requires adding two config lines to config.rb file
 
 ## Sass compiling improvements
 
-At the end some tips how to improve stylesheet generation.
+Finally, I want to give you a few tips on how to improve stylesheet generation.
 
 Just type in the console
 
 <code>compass watch</code>
 
-And now everytime if you change something in your sass files, the compass will notice
+And now everytime you change something in your sass files, the compass will notice
 this and your stylesheets will be recompiled.
 
 You can also execute <code class="inline">compass compile</code> after your project
@@ -265,7 +266,7 @@ compilation adding this to the end of the project file
 
 ## Full solution
 
-You can find end solution on [github][Full_solution]. That's it, for futher reading I recommend [The Sass Way][The_Sass_Way]
+You can find end solution on [github][Full_solution]. That's it, for futher reading I highly recommend [The Sass Way][The_Sass_Way]
 
 [Sass]: http://sass-lang.com
 [Compass]: http://compass-style.org

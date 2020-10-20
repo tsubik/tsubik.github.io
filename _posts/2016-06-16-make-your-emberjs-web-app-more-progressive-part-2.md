@@ -8,7 +8,7 @@ permalink: /blog/make-your-emberjs-web-app-more-progressive-part-2-offline-cachi
 image: pwa-splittypie-offline.png
 ---
 
-This is the second part of the series about making your ember app more mobile friendly.
+It is the second part of the series about making your ember app more mobile-friendly.
 [The first part][first-post] was about adding Home Screen icons,
 Splashscreen, and controlling app shell display on mobile devices. This time, I want to
 write more about offline assets caching.
@@ -21,11 +21,11 @@ Some offline caching techniques are available for many years. There is a standar
 cannot be reliable as a browser can throw our cache out at any point in time.
 There is also an [ApplicationCache interface][app-cache-beginners]
 to tackle this problem, but it is obsolete now, and you had to [mind many gotchas][app-cache-douchebag] along the way of using it.
-Fortunately, there is a new way which utilizes [service workers][service-workers] to achieve the same goal.
+Fortunately, there is a new way that utilizes [service workers][service-workers] to achieve the same goal.
 
 ## What is a service worker?
 
-In the nutshell, service worker is a JavaScript script which runs in a separate thread in the browser.
+In a nutshell, a service worker is a JavaScript script that runs in a separate thread in the browser.
 There is a standardized API designed to allow communication between your web application and its
 service workers. I strongly encourage you to look up for more information about this concept.
 Here are a few things you could achieve using those scripts:
@@ -35,23 +35,23 @@ Here are a few things you could achieve using those scripts:
 * [push notifications][push-api]
 * [geo-fencing][geo-fencing] (I'd love to make a post about it in the future)
 
-In this particular post I'm writing about the first case, but stay tuned to my blog,
+In this particular post, I'm writing about the first case, but stay tuned to my blog,
 the moar stuff about service workers is coming ;).
 
-So, back to offline support, comparing to mentioned ApplicationCache, [Service Worker API][service-workers] is a way more complicated,
-but also a way more powerful. The main difference is a flexibility that is given to us, we can
+So, back to offline support, compared to the mentioned ApplicationCache, [Service Worker API][service-workers] is way more complicated,
+but also way more powerful. The main difference is the flexibility that is given to us, we can
 programmatically control which assets and how will be cached.
 
 ## How to use Service worker with Cache API
 
-Before I go any further, it is worth to mention that your application must be served over HTTPS. This is
+Before I go any further, it is worth mentioning that your application must be served over HTTPS. This is
 a requirement for service workers to work :).
 
 I will shuffle with some code so you can get a general idea.
 
 ### Register service worker
 
-First you have to register it.
+First, you have to register the script.
 
 {% highlight javascript %}
 
@@ -69,14 +69,14 @@ if ("serviceWorker" in navigator) {
 ### Service worker lifecycle
 
 Service workers have two lifecycle events you can attach to: [install][install-event], [activate][activate-event]
-and another [fetch event][fetch-event] that we will be using to serve cached assets.
+, and another [fetch event][fetch-event] that we will be using to serve cached assets.
 
 ### Add things to cache
 
 Part of the Service Worker API is a [Cache Interface][cache-interface] which provides
 a storage mechanism for your assets. You are responsible for handling cache updates/purge/etc.
 
-Here is a simple example how we could use install event to cache assets.
+Here is a simple example of how we could use the install event to cache assets.
 
 {% highlight javascript %}
 
@@ -124,7 +124,7 @@ self.addEventListener("fetch", (event) => {
 
 ### What about updates?
 
-What if your service worker script changes? Simply, the new version of service worker is installed in the
+What if your service worker script changes? Simply, the new version of the service worker is installed in the
 background, but it could be not active yet. It is only activated when there are no longer any pages
 loaded that are still using the old version. That's why it is a good practice to use a different
 cache store for the new version, let's say "v2". You should get rid of the old cache in ["activate" lifecycle
@@ -150,13 +150,13 @@ this.addEventListener("activate", function(event) {
 
 ### Some helpers
 
-Above examples were framework agnostic and should give you some basic understanding of the whole idea.
+The Above examples were framework agnostic and should give you some basic understanding of the whole idea.
 And what's more, there are some tools to simplify the process like [sw-toolbox][sw-toolbox] which provides caching
-strategies and [sw-precache][sw-precache] util to generate `service-worker.js` that precaches resources for you.
+strategies, and [sw-precache][sw-precache] util to generate `service-worker.js` that precaches resources for you.
 
 ## How to start offline caching in Ember.js app
 
-You may think, finally some Ember stuff but I feel compelled to made above introduction.
+You may think, finally some Ember stuff but I feel compelled to make the above introduction.
 Anyway, as in [the first post][first-part] I will be using [SplittyPie][splittypie] application as
 an example.
 
@@ -171,7 +171,7 @@ ember install broccoli-serviceworker
 {% endhighlight %}
 
 What this does is generate `service-worker.js` and add service worker register code to your `index.html`.
-It uses mentioned [sw-toolbox][sw-toolbox] library which helps with various caching strategies.
+It uses the mentioned [sw-toolbox][sw-toolbox] library which helps with various caching strategies.
 
 In order to enable this addon, add some configuration into `app/config/environment.js` file.
 
@@ -214,13 +214,13 @@ ENV.serviceWorker = {
 
 {% endhighlight %}
 
-I'm using different preloader page for other than index page requests (app.html just showing "Loading Splittypie..."),
+I'm using a different preloader page for other than index page requests (app.html just showing "Loading Splittypie..."),
 that's why the need of pre-cache this page and fallback if a user is offline. Additionally, you can see
-caching Google fonts using "fastest strategy". About cache strategies you can read on
+caching Google fonts using the "fastest strategy". About cache strategies, you can read on
 [sw-toolbox documentation][sw-toolbox-api].
 
 Also, I'm not using the default registration code (`includeRegistration: false`), instead, I wanted to
-have more control over registration process in order to inform users about offline capability and
+have more control over the registration process to inform users about offline capability and
 application updates. My `offline-support` initializer below.
 
 {% highlight javascript %}
@@ -264,7 +264,7 @@ export default {
 ## What's next?
 
 Unfortunately, my [SplittyPie][splittypie] still doesn't work without internet connection as
-I'm using firebase as a data layer. That's why the next part is going to be about an offline data access
+I'm using firebase as a data layer. That's why the [next part][next-part] is going to be about offline data access
 and synchronization.
 
 [first-post]: https://tsubik.com/blog/make-your-emberjs-web-app-more-progressive-part-1
@@ -285,3 +285,4 @@ and synchronization.
 [broccoli-serviceworker]: https://github.com/jkleinsc/broccoli-serviceworker
 [broccoli-serviceworker-cache-strategies]: https://github.com/jkleinsc/broccoli-serviceworker#routing-options
 [sw-toolbox-api]: https://googlechrome.github.io/sw-toolbox/docs/master/tutorial-api
+[next-part]: https://tsubik.com/blog/make-your-emberjs-web-app-more-progressive-part-3-offline-data/

@@ -7,7 +7,13 @@ author: "Tomasz Subik"
 permalink: /blog/visual-studio-database-project-migrations/
 ---
 
-Visual Studio Database project is a good way to quickly get your database under source control. You will find it very useful especially if your system has a large database schema with a huge pile of stored procedures, functions, views or other database centric stuff. Unfortunately, the deployment strategy brought with it is painful and detached from reality. Automated migration of production database to the latest version is hmmm.... I won't say impossible. I read about it, but it was like fixing sinking submarine using bare hands. Some people use [roundhouse](https://github.com/chucknorris/roundhouse) which is a very nice project to manage database migrations using differential scripts. Below you will find pros/cons of using both of these tools.
+Visual Studio Database project is a good way to quickly get your database under a source control.
+You will find it very useful especially if your system has a large database schema with a huge pile of stored procedures, functions, views or other database centric stuff.
+Unfortunately, the deployment strategy brought with it is painful and detached from the reality.
+Automated migration of the production database to the latest version is, hmmm...., I won't say impossible, just hard.
+When I read about it, it souded more like fixing sinking submarine with your bare hands.
+Some people use [roundhouse](https://github.com/chucknorris/roundhouse) which is a very nice project to manage database migrations using differential scripts.
+Below you will find some pros and cons of using both solutions.
 
 <!--more-->
 
@@ -15,11 +21,11 @@ Visual Studio Database project is a good way to quickly get your database under 
 
 Pros:
 
-* integration with visual studio. You can use a database designer instead of writing "alter/create scripts"
-* performing comparisons with other databases/database projects using schema comparison tool
-* keeping the whole schema in the project
-* creating fresh database from schema instead of performing migrations
-* live validation of database schema - very easy refactoring with visual studio
+* integration with visual studio. You can use a database designer tool instead of writing "alter/create scripts"
+* performs comparisons with other databases/database projects using schema comparison tool
+* keeps the whole schema in the project
+* creates a fresh database from the schema instead of running all migrations
+* live validation of database schema - very easy refactor process with Visual Studio
 
 Cons:
 
@@ -36,7 +42,7 @@ Pros:
 
 Cons:
 
-* creating "clear" database by running all migrations
+* creating a "clean" database by running all migrations
 * You do not know what database schema looks like unless you create the database
 
 ## Why not both?
@@ -46,9 +52,9 @@ Why not to use these tools together? Cooperation will bring you something like t
 Pros:
 
 * integration with visual studio. You can use a database designer instead of writing "alter/create scripts" (DB Proj)
-* performing comparisons with other databases/database projects using schema comparison tool (DB Proj)
-* keeping the whole schema in the project  (DB Proj)
-* creating fresh database from schema instead of performing migrations (DB Proj)
+* performs comparisons with other databases/database projects using schema comparison tool (DB Proj)
+* keeps the whole schema in the project  (DB Proj)
+* creates fresh database from schema instead of running all migrations (DB Proj)
 * live validation of database schema - very easy refactoring with visual studio (DB Proj)
 * automate database migrations using differential scripts and updating only procedures/views/functions which have changed (Roundhouse)
 * database version control (Roundhouse)
@@ -57,8 +63,8 @@ Cons:
 
 * if you have a large database it takes a lot of memory to hold database schema
 
-Looks better, but of course it needs some additional work to be done because roundhouse does not
-play well with stored procedures scripts from database project.
+Looks better, but of course it needs an additional work to be done as roundhouse does not
+play well with stored procedures scripts that come from database project.
 I had to customize rh library to support following:
 
 * schema bound views - I need this because we have that kind of views in the database.
@@ -89,8 +95,8 @@ Then using database designer within visual studio we will add <code class="inlin
 
 ![Tasks table - Visual Studio Designer](/images/blog/dbmigrations_1.png)
 
-We also will need schema comparison profile file which compares our db project with local database. By default we ignore stored procedures/functions/views because roundhouse takes care of them.
-To create migration we will use visual studio schema compare tools either manually or using described by [previous post adding migration powershell script](http://tsubik.com/blog/generate-migrations-for-db-projects-automate-visual-studio-with-powershell).
+We also need schema comparison profile file which compares our db project with local database. By default we ignore stored procedures/functions/views because roundhouse takes care of them.
+To create a migration we will use Visual Studio schema compare tools either manually or using described by [previous post adding migration powershell script](http://tsubik.com/blog/generate-migrations-for-db-projects-automate-visual-studio-with-powershell).
 Here we have result migration file generated by script and cleaned from unnecessary data.
 
 {% highlight sql %}
@@ -136,7 +142,7 @@ ALTER TABLE [dbo].[Tasks] WITH CHECK CHECK CONSTRAINT [FK_Tasks_ToAssignedToUser
 GO
 {% endhighlight %}
 
-To perform migration we will use roundhouse library. The simplest way is to use rh console application, but I've created extra console application to generate sample and static data and perform migrations. To kick migrations <code class="inline">run_migrations.bat</code> was created.
+To perform a migration we will use roundhouse library. The simplest way is to use rh console application, but I've created extra console application to generate sample and static data and perform migrations. To kick migrations <code class="inline">run_migrations.bat</code> was created.
 
 {% highlight rconsole %}
 
@@ -276,10 +282,10 @@ Now we can run migrations
 
 <code>run_migrations.bat</code>
 
-And that's it. To use this method you must to remeber key concepts:
+And that's it. To use this method you MUST remeber a few key concepts:
 
-1.  All changes in database schema must be perfom in visual studio solution, never directly on the database.
-2.  Changes in all databases must be perform by running migrations.
-3.  New database could be created by publishing database project and then running rh tools in baseline mode to store information in database that all migrations have already run.
+1.  All changes in the database schema must be done in the Visual Studio solution, never directly on the database.
+2.  Changes in all databases must be done by running migrations.
+3.  New database could be created by publishing database project and then running rh tools in the baseline mode. That will store information in the database of all already ran migrations.
 
 Have fun.

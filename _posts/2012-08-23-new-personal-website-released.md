@@ -7,20 +7,24 @@ author: "Tomasz Subik"
 permalink: /blog/new-personal-website-released/
 ---
 
-Finally, I've found some time to refresh my personal website. Nothing has changed here for years
-and the blog was already dead. Even if I liked the old design I have decided to make some definite changes.
-I found it too darkly and gloomy and with many unnecessary graphics elements which could be swapped
-with simple text using proper fonts. The next problem was the lack of support for mobile devices,
-the page was not adapting to a device screen.
+I finally found some time to refresh my personal website, yay! To be honest, nothing has changed here for years
+and my blog was already long dead. Even if I liked the old design I have decided to make some definite changes, starting fresh is always a good idea.
 
 <!--more-->
+
+## Previous design
+
+The previous design I found gloomy and with too many unnecessary graphics elements which could be swapped
+with simple text using proper fonts. Lacking support for mobile devices was the next problem. The page was simply not adapting to
+many device's screens.
+
 <br>
 ![Old-site-design](/images/blog/mysite_01.png "Old site design")
 <br>
 <br>
 
-As I am a web developer I've decided not to go for any CMS solution to build me site.
-The reason was simple. I didn't need it at all. What I went for was a completely static HTML site.
+As I am a web developer, I've decided not to go for any existing CMS solution for rebulding the site.
+The reason is dead simple. I didn't need it at all. What I went for instead, was a completely static HTML site.
 That's all I needed.
 
 So I made a list of requirements for my new site:
@@ -30,10 +34,10 @@ So I made a list of requirements for my new site:
   This is a static site generation tool which allows you to use layouts, templates, and many nice features.
   Building site with <a href="http://jekyllrb.com/">Jekyll</a> could be a topic for another blog post, though.
   At first, I was trying to play with a tool called <a href="https://github.com/Code52/pretzel">Pretzel</a>
-  which is a Jekyll .NET port. Although, after having so many troubles with it, I decided to leave it at that moment.
+  which is a Jekyll .NET port. Although, after having so many troubles with it, I decided to not use it.
 * Have a responsive design to adapt to mobile devices screens.
 * Be plain, simple and without any unnecessary fireworks.
 
-I pretty sure I met these requirements and I hope you will like my new design. Enjoy.
+I'm pretty sure I met those requirements and I hope you will like my new design.
 
-Check the code of site out on <a href="https://github.com/tsubik/tsubik.github.io">Github</a>
+Check the code hosted on <a href="https://github.com/tsubik/tsubik.github.io">Github</a>

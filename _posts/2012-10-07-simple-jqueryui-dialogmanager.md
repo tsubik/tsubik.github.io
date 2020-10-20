@@ -7,16 +7,16 @@ author: "Tomasz Subik"
 permalink: /blog/simple-jqueryui-dialogmanager/
 ---
 
-Recently I've been working on structuring and refactoring javascript code in a middle size application.
-There are many modal popups, you know popup invoking popup and so on. Many of them were just created
-on div elements which already exist in the html markup. I thought that it would be a better
-idea to create these kinds of div elements only if I want to show a dialog using them.
-The next thing I'd like to achieve is to use default configuration for created dialogs.
-Also, I want my div element destroyed after closing the dialog.
+Recently, I've been working on structuring and refactoring javascript code in a middle-sized application.
+The application was extensively using modal popups, and the design allowed to stack popups on each other.
+Many of them were just created on div elements that already existed in the HTML markup. What I thought would be a better
+idea was to create div elements dynamically only if I wanted to show a dialog.
+The next thing I'd like to achieve was using a default configuration for created dialogs.
+What's more, I wanted my div element destroyed after closing the dialog.
 
 <!--more-->
 
-Ok. Enough talking. Show me some code!
+Alright. Enough talking. Show me some code!
 
 <noscript><pre>
 ;(function(w){

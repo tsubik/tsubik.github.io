@@ -7,30 +7,30 @@ author: "Tomasz Subik"
 permalink: /blog/retain-old-family-photos-using-nodejs-and-imagemagick/
 ---
 
-Last weekend I decided to push forward an idea which had wrapped around my mind for a long long time. My family (I guess as almost everyone's) has a lot of photos, notes, documents, etc. A lot of memories, packed into albums, envelopes, frames or hidden somewhere between books on the bookshelf. Pictures fade or simply lose quality over time. That's why I decided to scan them, but as there are a lot of them I wanted to automate the process as much as I can.
+Last weekend I decided to push forward an idea which has wrapped around my mind for a very long time. My family (I guess like almost everyone's) has a lot of photos, notes, documents, etc. A lot of memories, packed into albums, envelopes, frames, or hidden somewhere between books on the bookshelf. Pictures fade or lose quality over time. That's why I decided to scan them, but as there are a lot of them, I wanted to automate the process as much as I can.
 
 <!--more-->
 
 ## Manual Process
 
-The process is simple and can be broken down into following steps:
+The process is simple and can be broken down into the following steps:
 
 1. Insert a few pictures into a scanner. I want to scan multiple pictures at once to make the whole process faster.
-2. Scan using<code class="inline">Scan To File</code>button directly to connected computer.
-3. Let the script make the rest, so go to the step 1.
+2. Scan using<code class="inline">Scan To File</code>button directly to the connected computer.
+3. Let the script make the rest, so go to step 1.
 
 ## The Script
 
 1. Watch scanner output directory.
-2. If a new image, use ImageMagick to crop multiple images from it and then deskew them if needed. Move results to different watched folder for further processing.
-3. Convert images to jpegs and move to output directory.
+2. If a new image, use ImageMagick to crop multiple images from it and then deskew them if needed. Move results to a different watched folder for further processing.
+3. Convert images to jpegs and move to the output directory.
 4. Preserve scan somewhere just in case.
 
 Sounds easy, right? Ok, maybe except cropping images and deskewing part, but thanks to<code class="inline">the Google</code>I found a glut of [useful ImageMagick scripts][fred_scripts]. Those scripts are free, but only for non-commercial use, so mind your intentions. Of course, you have to have ImageMagick installed in the first place.
 
 ## Gimmie Some Code
 
-There is<code class="inline">Node.js</code>mentioned in the title of this post, so Yes... I feel compelled to show some code ;). Here is script code.
+There is<code class="inline">Node.js</code>mentioned in the title of this post, so Yes... I feel compelled to show some code ;). Here is the script code.
 
 {% highlight javascript %}
 processArgs();
@@ -89,17 +89,17 @@ I am pretty happy with results. Of course, I need to rotate pictures accordingly
 
 ## Post Production
 
-Sometimes I need to discard a few of result pictures because of additional "subpictures" extracted from the original one. There is an option for the multi-crop script to discard images smaller than a given size. You have to be careful scanning small pictures, though.
+Sometimes I need to discard a few of the result pictures because of additional "subpictures" extracted from the original one. There is an option for the multi-crop script to discard images smaller than a given size. You have to be careful scanning small pictures, though.
 
-I found [Google Photos][google_photos] pretty robust for simple post production, including applying automatic filters and deskewing if the script doesn't work perfectly.
+I found [Google Photos][google_photos] pretty robust for simple post-production, including applying automatic filters and deskewing if the script doesn't work perfectly.
 
 ## Things to do
 
-Port to Windows. I have windows machine somewhere ;]. I will update this post after it is done.
+Port to Windows. I have windows machine somewhere ;]. I will update this post afterwards when it's done.
 
 ## Conclusions
 
-I find this approach pretty fast and good enough according to my needs. Maybe You Guys know a better and also FREE way? Let me know in the comments.
+I find this approach pretty fast and good enough for my needs. Maybe You Guys know a better and also FREE way? Let me know in the comments.
 
 [fred_scripts]: http://www.fmwconcepts.com/imagemagick/
 [chokidar]: https://github.com/paulmillr/chokidar
