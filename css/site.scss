@@ -48,6 +48,10 @@ a.nounderline {
   text-decoration: none;
 }
 
+img {
+  vertical-align: middle;
+}
+
 // helpers
 
 .text-center {
@@ -64,6 +68,10 @@ a.nounderline {
 
 .clear {
   clear: both;
+}
+
+.img-circle {
+  border-radius: 50%;
 }
 
 /* header with navigation */
