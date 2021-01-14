@@ -2,7 +2,6 @@
 ---
 
 @import 'reset';
-@import 'bootstrap';
 @import 'pygments';
 
 body {
@@ -54,6 +53,7 @@ a.nounderline {
 
 img {
   vertical-align: middle;
+  max-width: 100%;
 }
 
 // helpers

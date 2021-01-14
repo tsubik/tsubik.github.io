@@ -1,0 +1,45 @@
+---
+---
+
+.form-group {
+  margin-bottom: 15px;
+
+  .form-control {
+    margin-top: 5px;
+  }
+}
+
+.form-control {
+  border-radius: 5px;
+  border: 1px solid #9CA3AF;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+
+  &:focus {
+    outline: none;
+    border: 1px solid #374151;
+  }
+}
+
+.btn {
+  border-radius: 5px;
+  border: 0;
+  padding: 10px;
+  font-size: 16px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn-green {
+  color: #fff;
+  background: #10B981;
+
+  &:hover {
+    cursor: pointer;
+    background: #047857;
+  }
+}
