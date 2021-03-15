@@ -2,13 +2,14 @@
 layout: base
 ---
 
+<a class="skip-link" href="#maincontent">Skip to main</a>
 <header>
   <section id="sectionMyName" class="pull-left">
     <img class="img-circle media-object gravatar offline" src="https://www.gravatar.com/avatar/79f84d85058cc766132def23e8f44e60.jpg?s=60" width="60" height="60" alt="tsubik@gmail.com" />
-    <div class="name" class="pull-right">
+    <h1 class="name" class="pull-right">
       <a href="/">Tomasz Subik</a><br>
       <small><em>Software Engineer</em></small>
-    </div>
+    </h1>
   </section>
   <nav>
     <ul>
@@ -18,9 +19,9 @@ layout: base
     </ul>
   </nav>
 </header>
-<div style="clear: both;">
+<main id="maincontent" style="clear: both;">
   {{content}}
   <footer>
     Copyright © 2012-<script>document.write(new Date().getFullYear());</script> Tomasz Subik
   </footer>
-</div>
+</main>

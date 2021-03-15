@@ -285,6 +285,21 @@ form span.req {
   text-align: center;
 }
 
+.skip-link {
+  position: fixed;
+  top: -50px;
+  left: 0;
+  background: #000000;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+  color: white;
+}
+
 /* Responsive web design media queries */
 
 @media screen and (max-width: 980px) {
