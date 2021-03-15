@@ -21,7 +21,7 @@ style: home
 
   <section class="testimonials">
     <div class="section-header">
-      <img src="images/quote.png" alt="Testimonials"/>
+      <img src="images/quote.png" alt="Testimonials" width="48" height="48" />
     </div>
 
     {% for testimonial in site.data.testimonials %}
@@ -31,7 +31,7 @@ style: home
       </div>
       <div class="testimonial-author">
         {{testimonial.author}}
-        <img class="img-circle" src="images/testimonials/{{testimonial.picture}}" alt="{{testimonial.author}} photo" width="70">
+        <img class="img-circle" src="images/testimonials/{{testimonial.picture}}" alt="{{testimonial.author}} photo" width="70" height="70" />
       </div>
     </article>
     {% endfor %}
