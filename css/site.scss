@@ -39,6 +39,10 @@ div#container {
   width: 90%;
   position: relative;
   margin: 0 auto;
+
+  @media print {
+    max-width: unset;
+  }
 }
 
 a,
